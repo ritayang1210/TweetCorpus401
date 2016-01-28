@@ -1,4 +1,6 @@
-#import NLPlib
+import sys
+sys.path[0:0] = './tagger'
+import NLPlib
 
 def read_file(file_name):
     """(str of file name) ->Table
@@ -10,8 +12,12 @@ def read_file(file_name):
     file.close()
     return file_list
 
-def removeHTMLTagAttr(tweetText):
+def extractTweetText(line):
     #TODO
+    return
+
+def removeHTMLTagAttr(tweetText):
+    #TODO - rita
     return
 
 def replaceHTMLChars(tweetText):
@@ -19,26 +25,26 @@ def replaceHTMLChars(tweetText):
     return
 
 def removeURL(tweetText):
-    #TODO
+    #TODO - rita
     return
 
-def removeFstCharOfUserNameHashTag(tweetText):
+def removeFirstCharOfUserNameHashTag(tweetText):
     #TODO
     return
 
 def findLineEnding(tweetText):
+    #TODO - rita
+    return
+
+def getTokenList(tweetText):
     #TODO
     return
 
-def separateBySpace(tweetText):
-    #TODO
+def addTagToToken(token):
+    #TODO - rita
     return
 
-def addTagToToken(tweetText):
-    #TODO
-    return
-
-def addDemarcation(tweetText):
+def addDemarcation(line):
     #TODO
     return
 

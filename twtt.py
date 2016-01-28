@@ -2,6 +2,8 @@ import sys
 sys.path.append('./tagger')
 import NLPlib
 
+INDEX_TWEET_TEXT = 5
+
 def read_file(file_name):
     """(str of file name) ->Table
     Input a string which is the file name of a table
@@ -13,8 +15,8 @@ def read_file(file_name):
     return file_list
 
 def extractTweetText(line):
-    #TODO
-    return
+    line_list = line.split(',"')
+    return line_list[INDEX_TWEET_TEXT][:-2]
 
 def removeHTMLTagAttr(tweetText):
     #TODO - rita
@@ -49,4 +51,6 @@ def addDemarcation(line):
     return
 
 if __name__ == "__main__":
-    print (read_table("tweets/testdata.manual.2009.06.14.csv"))
+    lst1 = read_file("tweets/testdata.manual.2009.06.14.csv")
+    for line in lst1:
+        print (extractTweetText(line))

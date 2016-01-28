@@ -1,5 +1,5 @@
 import sys
-sys.path[0:0] = './tagger'
+sys.path.append('./tagger')
 import NLPlib
 
 def read_table(file_name):

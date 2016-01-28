@@ -1,6 +1,8 @@
 import sys
+import re
 sys.path.append('./tagger')
 import NLPlib
+from HTMLParser import HTMLParser
 
 INDEX_TWEET_TEXT = 5
 
@@ -23,16 +25,15 @@ def removeHTMLTagAttr(tweetText):
     return
 
 def replaceHTMLChars(tweetText):
-    #TODO
-    return
+    parser = HTMLParser()
+    return parser.unescape(tweetText)
 
 def removeURL(tweetText):
     #TODO - rita
     return
 
 def removeFirstCharOfUserNameHashTag(tweetText):
-    #TODO
-    return
+    return re.sub(r"[@|#](\w+)", r"\1", tweetText)
 
 def findLineEnding(tweetText):
     #TODO - rita
@@ -53,4 +54,4 @@ def addDemarcation(line):
 if __name__ == "__main__":
     lst1 = read_file("tweets/testdata.manual.2009.06.14.csv")
     for line in lst1:
-        print (extractTweetText(line))
+        print (removeFirstCharOfUserNameHashTag(replaceHTMLChars(extractTweetText(line))))

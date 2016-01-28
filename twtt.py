@@ -2,7 +2,7 @@ import sys
 sys.path.append('./tagger')
 import NLPlib
 
-def read_table(file_name):
+def read_file(file_name):
     """(str of file name) ->Table
     Input a string which is the file name of a table
     """

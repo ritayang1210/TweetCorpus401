@@ -27,8 +27,7 @@ def replaceHTMLChars(tweetText):
     return
 
 def removeURL(tweetText):
-    #TODO - rita
-    return
+    return " ".join(filter(lambda x:(x[0:4]!='http' and x[0:3]!='www'), tweetText.split()))
 
 def removeFirstCharOfUserNameHashTag(tweetText):
     #TODO
@@ -53,4 +52,4 @@ def addDemarcation(line):
 if __name__ == "__main__":
     lst1 = read_file("tweets/testdata.manual.2009.06.14.csv")
     for line in lst1:
-        print (extractTweetText(line))
+        print (removeURL(extractTweetText(line)))

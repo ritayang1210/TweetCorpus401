@@ -37,16 +37,19 @@ def findLineEnding(tweetText):
     #TODO - rita
     return
 
-def getTokenList(tweetText):
+def getTokenTagList(tweetText):
     it = re.finditer(r"\w+|'\w+|[^\w\s]+", tweetText)
-    res = []
+    tokens = []
     for match in it:
-        res.append(match.group())
-    return res
+        tokens.append(match.group())
+    nlp = NLPlib.NLPlib()
+    nlpRes = nlp.tag(tokens)
+    res = []
+    for i in range(len(tokens)):
+        comb = tokens[i] + '/' + nlpRes[i]
+        res.append(comb)
 
-def addTagToToken(token):
-    #TODO - rita
-    return
+    return res
 
 def addDemarcation(line):
     #TODO
@@ -55,8 +58,7 @@ def addDemarcation(line):
 if __name__ == "__main__":
     o = NLPlib.NLPlib()
     lst1 = read_file("../tweets/testdata.manual.2009.06.14.csv")
-    s = "<head attr= kkkkk's> $25 in he'll </heads> there ... ,,, !!! .' "
+    for line in lst1:
 
-    a = getTokenList(s)
-    print (a)
-    print (o.tag(a))
+        a = getTokenTagList(extractTweetText(line))
+        print (a)

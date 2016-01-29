@@ -4,6 +4,7 @@ import NLPlib
 from HTMLParser import HTMLParser
 
 INDEX_TWEET_TEXT = 5
+INDEX_DEMARCATION = 0
 
 def read_file(file_name):
     """(str of file name) ->Table
@@ -47,17 +48,17 @@ def getTokenTagList(tweetText):
     for i in range(len(tokens)):
         comb = tokens[i] + '/' + nlpRes[i]
         res.append(comb)
-
     return res
 
-def addDemarcation(line):
-    #TODO
-    return
+def getDemarcation(line):
+    line_list = line.split(',"')
+    return "<A=" + line_list[INDEX_DEMARCATION][1] +">"
 
 if __name__ == "__main__":
     o = NLPlib.NLPlib()
     lst1 = read_file("../tweets/testdata.manual.2009.06.14.csv")
     for line in lst1:
+        print (getDemarcation(line))
 
-        a = getTokenTagList(extractTweetText(line))
-        print (a)
+        # a = getTokenTagList(extractTweetText(line))
+        # print (a)

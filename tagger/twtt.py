@@ -33,9 +33,8 @@ def removeURL(tweetText):
 def removeFirstCharOfUserNameHashTag(tweetText):
     return re.sub(r"[@|#](\w+)", r"\1", tweetText)
 
-def findLineEnding(tweetText):
-    #TODO - rita
-    return
+def getSentences(tweetText):
+    return re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', tweetText)
 
 def getTokenList(tweetText):
     it = re.finditer(r"\w+|'\w+|[^\w\s]+", tweetText)
@@ -54,9 +53,13 @@ def addDemarcation(line):
 
 if __name__ == "__main__":
     o = NLPlib.NLPlib()
-    lst1 = read_file("../tweets/testdata.manual.2009.06.14.csv")
-    s = "<head attr= kkkkk's> $25 in he'll </heads> there ... ,,, !!! .' "
+    # lst1 = read_file("../tweets/testdata.manual.2009.06.14.csv")
+    # s = "<head attr= kkkkk's> $25 in he'll </heads> there ... ,,, !!! .' "
+    s = "Mr. Smith bought cheapsite.com for 1.5 million dollars, i.e. he paid a lot for it. Did he mind? Adam Jones Jr. thinks he didn't. In any case, this isn't true... Well, with a probability of .9 it isn't."
 
     a = getTokenList(s)
     print (a)
     print (o.tag(a))
+
+    for sentence in getSentences(s):
+        print sentence

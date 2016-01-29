@@ -27,15 +27,14 @@ def replaceHTMLChars(tweetText):
     return parser.unescape(tweetText)
 
 def removeURL(tweetText):
-    return " ".join(filter(lambda x:(x[0:4]!='http' and x[0:3]!='www'), tweetText.split()))
+    return re.sub(r"(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?", "", tweetText)
 
 
 def removeFirstCharOfUserNameHashTag(tweetText):
     return re.sub(r"[@|#](\w+)", r"\1", tweetText)
 
-def findLineEnding(tweetText):
-    #TODO - rita
-    return
+def getSentences(tweetText):
+    return re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', tweetText)
 
 def getTokenTagList(tweetText):
     it = re.finditer(r"\w+|'\w+|[^\w\s]+", tweetText)

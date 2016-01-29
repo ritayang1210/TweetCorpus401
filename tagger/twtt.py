@@ -28,13 +28,13 @@ def replaceHTMLChars(sentence):
     return parser.unescape(sentence)
 
 def removeURL(sentence):
-    return re.sub(r"(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?", "", sentence)
+    return re.sub(r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)", "", sentence)
 
 def removeFirstCharOfUserNameHashTag(sentence):
     return re.sub(r"[@|#](\w+)", r"\1", sentence)
 
 def getSentences(tweetText):
-    return re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', tweetText)
+    return re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s?', tweetText)
 
 def getTokenTagList(nlp, sentence):
     it = re.finditer(r"\w+|'\w+|[^\w\s]+", sentence)
@@ -64,6 +64,10 @@ if __name__ == "__main__":
             sentence = replaceHTMLChars(sentence)
             sentence = removeFirstCharOfUserNameHashTag(sentence)
             sentence = removeHTMLTagAttr(sentence)
+            sentence = sentence.strip()
+
+            if not sentence:
+                continue
 
             tokenTagList = getTokenTagList(nlp, sentence)
             for tokenTag in tokenTagList:

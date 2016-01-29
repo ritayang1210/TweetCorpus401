@@ -56,8 +56,10 @@ def getDemarcation(line):
 if __name__ == "__main__":
     nlp = NLPlib.NLPlib()
     lines = read_file("../tweets/testdata.manual.2009.06.14.csv")
+    resFile = open("text.twt", "w")
     for line in lines:
-        print getDemarcation(line)
+        resFile.write(getDemarcation(line))
+        resFile.write("\n")
         tweetText = extractTweetText(line)
         for sentence in getSentences(tweetText):
             sentence = removeURL(sentence)
@@ -71,8 +73,8 @@ if __name__ == "__main__":
 
             tokenTagList = getTokenTagList(nlp, sentence)
             for tokenTag in tokenTagList:
-                print tokenTag,
-            print
+                resFile.write(tokenTag + " ")
+            resFile.write("\n")
 
 
 

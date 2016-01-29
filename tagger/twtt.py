@@ -27,7 +27,7 @@ def replaceHTMLChars(tweetText):
     return parser.unescape(tweetText)
 
 def removeURL(tweetText):
-    return " ".join(filter(lambda x:(x[0:4]!='http' and x[0:3]!='www'), tweetText.split()))
+    return re.sub(r"(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?", "", tweetText)
 
 
 def removeFirstCharOfUserNameHashTag(tweetText):
@@ -52,14 +52,18 @@ def addDemarcation(line):
     return
 
 if __name__ == "__main__":
-    o = NLPlib.NLPlib()
+    # o = NLPlib.NLPlib()
     # lst1 = read_file("../tweets/testdata.manual.2009.06.14.csv")
     # s = "<head attr= kkkkk's> $25 in he'll </heads> there ... ,,, !!! .' "
-    s = "Mr. Smith bought cheapsite.com for 1.5 million dollars, i.e. he paid a lot for it. Did he mind? Adam Jones Jr. thinks he didn't. In any case, this isn't true... Well, with a probability of .9 it isn't."
+    # s = "Mr. Smith bought cheapsite.com for 1.5 million dollars, i.e. he paid a lot for it. Did he mind? Adam Jones Jr. thinks he didn't. In any case, this isn't true... Well, with a probability of .9 it isn't."
 
-    a = getTokenList(s)
-    print (a)
-    print (o.tag(a))
+    # a = getTokenList(s)
+    # print (a)
+    # print (o.tag(a))
 
-    for sentence in getSentences(s):
-        print sentence
+    # for sentence in getSentences(s):
+    #     print sentence
+
+    s = "Missed this insight-filled May column: One smart guy looking closely at why he's impressed with Kindle2 http://bit.ly/i0peY @wroush"
+    # s = "iPhone May Get Radio Tagging and Nike  : Recently-released iTunes version 8.2 suggests that VoiceOver functional.. http://tinyurl.com/oq5ctc"
+    print removeURL(s)

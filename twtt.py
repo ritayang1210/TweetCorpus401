@@ -21,16 +21,15 @@ def extractTweetText(line):
     return line_list[INDEX_TWEET_TEXT][:-2]
 
 def removeHTMLTagAttr(tweetText):
-    #TODO - rita
-    return
+    return re.sub('<[^<]+?>', '', tweetText)
 
 def replaceHTMLChars(tweetText):
     parser = HTMLParser()
     return parser.unescape(tweetText)
 
 def removeURL(tweetText):
-    #TODO - rita
-    return
+    return " ".join(filter(lambda x:(x[0:4]!='http' and x[0:3]!='www'), tweetText.split()))
+
 
 def removeFirstCharOfUserNameHashTag(tweetText):
     return re.sub(r"[@|#](\w+)", r"\1", tweetText)
@@ -40,8 +39,11 @@ def findLineEnding(tweetText):
     return
 
 def getTokenList(tweetText):
-    #TODO
-    return
+    it = re.finditer(r"\w+|'\w+|[^\w\s]+", tweetText)
+    res = []
+    for match in it:
+        res.append(match.group())
+    return res
 
 def addTagToToken(token):
     #TODO - rita
@@ -52,6 +54,10 @@ def addDemarcation(line):
     return
 
 if __name__ == "__main__":
+    o = NLPlib.NLPlib()
     lst1 = read_file("tweets/testdata.manual.2009.06.14.csv")
-    for line in lst1:
-        print (removeFirstCharOfUserNameHashTag(replaceHTMLChars(extractTweetText(line))))
+    s = "<head attr= kkkkk's> $25 in he'll </heads> there ... ,,, !!! .' "
+
+    a = getTokenList(s)
+    print (a)
+    print (o.tag(a))

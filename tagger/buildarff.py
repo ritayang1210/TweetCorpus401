@@ -1,6 +1,6 @@
 import re
 
-PATH_WORDLISTS = './Wordlists'
+PATH_WORDLISTS = '../Wordlists'
 
 SECOND_PERSON_PRONOUNS = ['you', 'your', 'yours', 'u', 'ur', 'urs']
 COORD_CONJUNCTIONS = open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()
@@ -112,3 +112,4 @@ def getTag(tokenTag):
 # def avgLenOfSentences(tweet):
 #     return
 
+print isModernSlangAcroynms('ppl/NN')

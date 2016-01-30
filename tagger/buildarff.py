@@ -2,13 +2,13 @@ import re
 
 PATH_WORDLISTS = '../Wordlists'
 
-SECOND_PERSON_PRONOUNS = ['you', 'your', 'yours', 'u', 'ur', 'urs']
-COORD_CONJUNCTIONS = open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()
+SECOND_PERSON_PRONOUNS = open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()
+SLANGS = open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()
+COORD_CONJUNCTIONS = ['CC']
 COLONS_SEMI_COLONS = [';', ':']
 PARENTHESES = ['(', ')']
 COMMON_NOUNS = ['NN', 'NNS']
 ADVERBS = ['RB', 'RBR', 'RBS']
-SLANGS = open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()
 FIRST_PERSON_PRON = ["i", "me", "my", "mine", "we", "us", "our", "ours"]
 THIRD_PERSON_PRON = ["he", "him", "his", "she", "her", "hers", "it", "its", "they", "them", "their", "theirs"]
 PAST_TENSE_VERBS_TAG = ["VBN", "VBD"]
@@ -30,9 +30,9 @@ def isThirdPersonPron(tokenTag):
     return token.lower() in THIRD_PERSON_PRON
 
 def isCoordConj(tokenTag):
-    token = getToken(tokenTag)
+    tag = getTag(tokenTag)
 
-    return token.lower() in COORD_CONJUNCTIONS
+    return tag.upper() in COORD_CONJUNCTIONS
 
 def isPastTenseVerbs(tokenTag):
     tag = getTag(tokenTag)
@@ -112,4 +112,4 @@ def getTag(tokenTag):
 # def avgLenOfSentences(tweet):
 #     return
 
-print isModernSlangAcroynms('ppl/NN')
+print isSecPersonPron('youRsx/NN')

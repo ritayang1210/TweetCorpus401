@@ -21,7 +21,7 @@ def isFrsPersonPron(tokenTag):
     return token.lower() in FIRST_PERSON_PRON
 
 def isSecPersonPron(tokenTage):
-    token = getToken(tokenLabel)
+    token = getToken(tokenTag)
 
     return token.lower() in SECOND_PERSON_PRONOUNS
 
@@ -29,17 +29,17 @@ def isThirdPersonPron(tokenTag):
     token = getToken(tokenTag)
     return token.lower() in THIRD_PERSON_PRON
 
-def isCoordConj(tokenLabel):
-    token = getToken(tokenLabel)
+def isCoordConj(tokenTag):
+    token = getToken(tokenTag)
 
     return token.lower() in COORD_CONJUNCTIONS
 
 def isPastTenseVerbs(tokenTag):
-    tag = getLabel(tokenTag)
+    tag = getTag(tokenTag)
     return tag.upper() in PAST_TENSE_VERBS_TAG
 
-def isFutureTenseVerbs(tokenLabel):
-    token = getToken(tokenLabel)
+def isFutureTenseVerbs(tokenTag):
+    token = getToken(tokenTag)
 
     return token.lower() in FUTURE_TENSE
 
@@ -47,8 +47,8 @@ def isCommas(tokenTag):
     token = getToken(tokenTag)
     return token == ","
 
-def isColonsSemi_colons(tokenLabel):
-    token = getToken(tokenLabel)
+def isColonsSemiColons(tokenTag):
+    token = getToken(tokenTag)
 
     return token in COLONS_SEMI_COLONS
 
@@ -59,8 +59,8 @@ def isDashes(tokenTag):
     else:
         return False
 
-def isParentheses(tokenLabel):
-    token = getToken(tokenLabel)
+def isParentheses(tokenTag):
+    token = getToken(tokenTag)
 
     return token in PARENTHESES
 
@@ -71,26 +71,26 @@ def isEllipses(tokenTag):
     else:
         return False
 
-def isCommonNouns(tokenLabel):
-    tag = getLabel(tokenLabel)
+def isCommonNouns(tokenTag):
+    tag = getTag(tokenTag)
 
     return tag.upper() in COMMON_NOUNS
 
 def isProperNouns(tokenTag):
-    tag = getLabel(tokenTag)
-    
+    tag = getTag(tokenTag)
+
     return tag.upper() in PROPER_NOUNS_TAG
 
-def isAdverbs(token):
-    tag = getLabel(tokenLabel)
+def isAdverbs(tokenTag):
+    tag = getTag(tokenTag)
 
     return tag.upper() in ADVERBS
 
 def iswhWords(tokenTag):
-    tag = getLabel(tokenTag)
+    tag = getTag(tokenTag)
     return tag.upper() in WH_Words_TAG
 
-def isModernSlangAcroynms(token):
+def isModernSlangAcroynms(tokenTag):
     file = open(file_name, 'r')
     lines = file.readlines()
 
@@ -101,11 +101,11 @@ def isUpperCaseWord(tokenTag):
     else:
         return False
 
-def getToken(tokenLabel):
-    return tokenLabel.split('/')[0]
+def getToken(tokenTag):
+    return tokenTag.split('/')[0]
 
-def getLabel(tokenLabel):
-    return tokenLabel.split('/')[1]
+def getTag(tokenTag):
+    return tokenTag.split('/')[1]
 
 # def avgLenOfSentences(tweet):
 #     return

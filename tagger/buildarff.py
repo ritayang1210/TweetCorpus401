@@ -27,6 +27,7 @@ def isSecPersonPron(tokenTag):
 
 def isThirdPersonPron(tokenTag):
     token = getToken(tokenTag)
+
     return token.lower() in THIRD_PERSON_PRON
 
 def isCoordConj(tokenTag):
@@ -36,6 +37,7 @@ def isCoordConj(tokenTag):
 
 def isPastTenseVerbs(tokenTag):
     tag = getTag(tokenTag)
+
     return tag.upper() in PAST_TENSE_VERBS_TAG
 
 def isFutureTenseVerbs(tokenTag):
@@ -45,6 +47,7 @@ def isFutureTenseVerbs(tokenTag):
 
 def isCommas(tokenTag):
     token = getToken(tokenTag)
+
     return token == ","
 
 def isColonsSemiColons(tokenTag):

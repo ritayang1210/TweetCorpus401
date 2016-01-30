@@ -49,6 +49,12 @@ def isModernSlangAcroynms(token):
 def isUpperCaseWord(token):
     return False
 
+def getToken(tokenLabel):
+    return tokenLabel.split('/')[0]
+
+def getLabel(tokenLabel):
+    return tokenLabel.split('/')[1]
+
 # def avgLenOfSentences(tweet):
 #     return
 

@@ -1,3 +1,5 @@
+import re
+
 PATH_WORDLISTS = './Wordlists'
 
 SECOND_PERSON_PRONOUNS = ['you', 'your', 'yours', 'u', 'ur', 'urs']
@@ -6,12 +8,12 @@ COLONS_SEMI_COLONS = [';', ':']
 PARENTHESES = ['(', ')']
 COMMON_NOUNS = ['NN', 'NNS']
 ADVERBS = ['RB', 'RBR', 'RBS']
-FIRST_PERSON_PRON = [i, me, my, mine, we, us, our, ours]
-THIRD_PERSON_PRON = [he, him, his, she, her, hers, it, its, they, them, their, theirs]
-PAST_TENSE_VERBS_TAG = [VBN, VBD]
-PROPER_NOUNS_TAG = [NNP, NNPS]
-WH_Words_TAG = [WDT, WP, WP$, WRB]
 SLANGS = open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()
+FIRST_PERSON_PRON = ["i", "me", "my", "mine", "we", "us", "our", "ours"]
+THIRD_PERSON_PRON = ["he", "him", "his", "she", "her", "hers", "it", "its", "they", "them", "their", "theirs"]
+PAST_TENSE_VERBS_TAG = ["VBN", "VBD"]
+PROPER_NOUNS_TAG = ["NNP", "NNPS"]
+WH_Words_TAG = ["WDT", "WP", "WP$", "WRB"]
 
 def isFrsPersonPron(tokenTag):
     token = getToken(tokenTag)

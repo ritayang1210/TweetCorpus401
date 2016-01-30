@@ -1,8 +1,7 @@
 PATH_WORDLISTS = './Wordlists'
 
 SECOND_PERSON_PRONOUNS = ['you', 'your', 'yours', 'u', 'ur', 'urs']
-COORD_CONJUNCTIONS = ['for', 'and', 'nor', 'but', 'or', 'yet', 'so' , 'yet', 'and', 'for', 'nor', 'or', 'but', 'so', 'for', 'or', 'nor', 'yet', 'but', 'and', 'so']
-FUTURE_TENSE = ['\'ll', 'will', 'gonna']
+COORD_CONJUNCTIONS = open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()
 COLONS_SEMI_COLONS = [';', ':']
 PARENTHESES = ['(', ')']
 COMMON_NOUNS = ['NN', 'NNS']
@@ -12,13 +11,14 @@ THIRD_PERSON_PRON = [he, him, his, she, her, hers, it, its, they, them, their, t
 PAST_TENSE_VERBS_TAG = [VBN, VBD]
 PROPER_NOUNS_TAG = [NNP, NNPS]
 WH_Words_TAG = [WDT, WP, WP$, WRB]
+SLANGS = open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()
 
 def isFrsPersonPron(tokenTag):
     token = getToken(tokenTag)
 
     return token.lower() in FIRST_PERSON_PRON
 
-def isSecPersonPron(tokenTage):
+def isSecPersonPron(tokenTag):
     token = getToken(tokenTag)
 
     return token.lower() in SECOND_PERSON_PRONOUNS
@@ -86,11 +86,13 @@ def isAdverbs(tokenTag):
 
 def iswhWords(tokenTag):
     tag = getTag(tokenTag)
+
     return tag.upper() in WH_Words_TAG
 
 def isModernSlangAcroynms(tokenTag):
-    file = open(file_name, 'r')
-    lines = file.readlines()
+    token = getToken(tokenTag)
+
+    return token.lower() in SLANGS
 
 def isUpperCaseWord(tokenTag):
     token = getToken(tokenTag)

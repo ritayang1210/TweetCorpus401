@@ -188,7 +188,7 @@ if __name__ == "__main__":
     esFile.write(ATTR + " AvgLengthOfSentences numeric\n")
     esFile.write(ATTR + " AvgLengthOfTokens numeric\n")
     esFile.write(ATTR + " NumOfSentences numeric\n")
-    esFile.write(ATTR + " Class numeric\n\n")
+    esFile.write(ATTR + " Class {0, 4}\n\n")
     esFile.write("@data\n")
     infoList = gatherFeatureInfo(inputFile)
     for info in infoList:

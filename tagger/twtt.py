@@ -3,6 +3,8 @@ import re
 import NLPlib
 from HTMLParser import HTMLParser
 
+reload(sys)
+sys.setdefaultencoding("latin-1")
 INDEX_TWEET_TEXT = 5
 INDEX_DEMARCATION = 0
 
@@ -69,9 +71,16 @@ if __name__ == "__main__":
         sys.exit()
 
     lines = read_file(inputFile)
+
+    trainingData = []
+    if groupNumber:
+        trainingData = lines[groupNumber * 5500: (groupNumber + 1) * 5500] + lines[800000 + groupNumber * 5500: 800000 + (groupNumber + 1) * 5500]
+    else:
+        trainingData = lines
+
     resFile = open(outputFile, "w")
     nlp = NLPlib.NLPlib()
-    for line in lines:
+    for line in trainingData:
         resFile.write(getDemarcation(line))
         resFile.write("\n")
         tweetText = extractTweetText(line)

@@ -1,4 +1,5 @@
 import re
+import sys
 
 PATH_WORDLISTS = '../Wordlists'
 
@@ -151,7 +152,21 @@ def gatherFeatureInfo(fileName):
     return res
 
 if __name__ == "__main__":
-    esFile = open("test.arff", "w")
+    inputFile = ''
+    outputFile = ''
+    maxNumOfTweetsPerClass = None
+    if len(sys.argv) == 3:
+        inputFile = sys.argv[1]
+        outputFile = sys.argv[2]
+    elif len(sys.argv) == 4:
+        inputFile = sys.argv[1]
+        outputFile = sys.argv[2]
+        maxNumOfTweetsPerClass = int(sys.argv[3])
+    else:
+        print 'usage: buildarff.py <inputFile> <outputFile> [<maxNumOfTweetsPerClass>]'
+        sys.exit()
+
+    esFile = open(outputFile, "w")
     esFile.write("@relation TweetsFeatureInformation\n\n")
     esFile.write(ATTR + " FirstPersonPronouns numeric\n")
     esFile.write(ATTR + " SecondPersonPronouns numeric\n")
@@ -175,7 +190,7 @@ if __name__ == "__main__":
     esFile.write(ATTR + " NumOfSentences numeric\n")
     esFile.write(ATTR + " Class numeric\n\n")
     esFile.write("@data\n")
-    infoList = gatherFeatureInfo("text.twt")
+    infoList = gatherFeatureInfo(inputFile)
     for info in infoList:
         esFile.write(','.join(str(x) for x in info) + "\n")
 

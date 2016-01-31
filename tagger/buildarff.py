@@ -2,6 +2,7 @@ import re
 import sys
 
 PATH_WORDLISTS = '../Wordlists'
+CLASSES_TO_COMPUTE = [0, 4]
 
 SLANGS = [x.lower() for x in open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()]
 FIRST_PERSON_PRON = [x.lower() for x in open(PATH_WORDLISTS + '/First-person', 'r').read().splitlines()]
@@ -125,6 +126,8 @@ def isWordToken(token):
 def gatherFeatureInfo(fileName, maxNumOfTweetsPerClass):
     twtFile = open(fileName, 'r')
     numPerClass = {}
+    for classToCompute in CLASSES_TO_COMPUTE:
+        numPerClass[classToCompute] = 0
     taggedTweets = twtFile.read()
     tweets = re.finditer("<A=(\d)>\n((?:\S+/\S+\s+)+)", taggedTweets)
     res = []
@@ -133,9 +136,7 @@ def gatherFeatureInfo(fileName, maxNumOfTweetsPerClass):
         twtInfo = [0] * 21
         tweetClass = int(tweet.group(1))
         twtInfo[-1] = tweetClass
-        if not tweetClass in numPerClass:
-            numPerClass[tweetClass] = 0
-        if numPerClass[tweetClass] >= maxNumOfTweetsPerClass:
+        if not tweetClass in numPerClass or numPerClass[tweetClass] >= maxNumOfTweetsPerClass:
             continue
         numPerClass[tweetClass] = numPerClass[tweetClass] + 1
         sentences = filter(None, tweet.group(2).split('\n'))
@@ -161,7 +162,7 @@ def gatherFeatureInfo(fileName, maxNumOfTweetsPerClass):
 if __name__ == "__main__":
     inputFile = ''
     outputFile = ''
-    maxNumOfTweetsPerClass = None
+    maxNumOfTweetsPerClass = sys.maxint
     if len(sys.argv) == 3:
         inputFile = sys.argv[1]
         outputFile = sys.argv[2]

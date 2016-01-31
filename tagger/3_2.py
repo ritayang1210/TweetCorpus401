@@ -6,10 +6,23 @@ if __name__ == '__main__':
     os.system('python twtt.py ../tweets/training.1600000.processed.noemoticon.csv 141 train.twt')
 
     os.system('python buildarff.py test.twt test.arff')
-    n = 250
-    while n <= 2750:
+    n = 500
+    resultFile = open('3.2output.txt', 'w')
+
+    while n <= 5500:
         # Generate .arff files
         os.system('python buildarff.py train.twt train.arff ' + str(n))
-        os.system('java -cp ../WEKA/weka.jar weka.classifiers.trees.J48 -t train.arff -T test.arff > ' + str(n * 2) + '-result.txt')
+        os.system('java -cp ../WEKA/weka.jar weka.classifiers.trees.J48 -t train.arff -T test.arff > temp_result.txt')
+
+        temp = open('temp_result.txt', 'r')
+
+        result = ''.join(temp.readlines()[-19:])
+
+        resultFile.write('================ Result for training data with size ' + str(n * 2) + ' ================')
+        resultFile.write(result)
+
+        temp.close()
+        os.remove('temp_result.txt')
+
         print('Finished with data size ' + str(n * 2) + '...')
-        n += 250
+        n += 500

@@ -2,18 +2,21 @@ import re
 
 PATH_WORDLISTS = '../Wordlists'
 
-SECOND_PERSON_PRONOUNS = open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()
-SLANGS = open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()
+SLANGS = [x.lower() for x in open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()]
+FIRST_PERSON_PRON = [x.lower() for x in open(PATH_WORDLISTS + '/First-person', 'r').read().splitlines()]
+SECOND_PERSON_PRONOUNS = [x.lower() for x in open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()]
+THIRD_PERSON_PRON = [x.lower() for x in open(PATH_WORDLISTS + '/Third-person', 'r').read().splitlines()]
 COORD_CONJUNCTIONS = ['CC']
 COLONS_SEMI_COLONS = [';', ':']
 PARENTHESES = ['(', ')']
 COMMON_NOUNS = ['NN', 'NNS']
 ADVERBS = ['RB', 'RBR', 'RBS']
-FIRST_PERSON_PRON = open(PATH_WORDLISTS + '/First-person', 'r').read().splitlines()
-THIRD_PERSON_PRON = open(PATH_WORDLISTS + '/Third-person', 'r').read().splitlines()
 PAST_TENSE_VERBS_TAG = ["VBN", "VBD"]
 PROPER_NOUNS_TAG = ["NNP", "NNPS"]
 WH_Words_TAG = ["WDT", "WP", "WP$", "WRB"]
+FUTURE_TENSE = ['\'ll', 'will', 'gonna']
+
+ATTR = "@attribute"
 
 def isFrsPersonPron(tokenTag):
     token = getToken(tokenTag)
@@ -101,10 +104,8 @@ def isModernSlangAcroynms(tokenTag):
 
 def isUpperCaseWord(tokenTag):
     token = getToken(tokenTag)
-    if len(token) >= 2 and token.isupper():
-        return True
-    else:
-        return False
+
+    return len(token) >= 2 and token.isupper()
 
 def getToken(tokenTag):
     return tokenTag.split('/')[0]
@@ -112,7 +113,70 @@ def getToken(tokenTag):
 def getTag(tokenTag):
     return tokenTag.split('/')[1]
 
-# def avgLenOfSentences(tweet):
-#     return
+def getSentenceLength(sentence):
+    return len(list(re.finditer("\S+/\S+\s", sentence)))
 
-print isSecPersonPron('youRsx/NN')
+def isWordToken(token):
+    pattern = re.compile("^\w+$")
+
+    return pattern.match(token) != None
+
+def gatherFeatureInfo(fileName):
+    twtFile = open(fileName, 'r')
+    taggedTweets = twtFile.read()
+    tweets = re.finditer("<A=(\d)>\n((?:\S+/\S+\s+)+)", taggedTweets)
+    res = []
+    tokenIdentifiers = [isFrsPersonPron, isSecPersonPron, isThirdPersonPron, isCoordConj, isPastTenseVerbs, isFutureTenseVerbs, isCommas, isColonsSemiColons, isDashes, isParentheses, isEllipses, isCommonNouns, isProperNouns, isAdverbs, iswhWords, isModernSlangAcroynms, isUpperCaseWord]
+    for tweet in tweets:
+        twtInfo = [0] * 21
+        twtInfo[-1] = int(tweet.group(1))
+        sentences = filter(None, tweet.group(2).split('\n'))
+        numOfSentence = len(sentences)
+        twtInfo[-2] = numOfSentence
+        numOfWordTokens = 0
+        for sentence in sentences:
+            twtInfo[-4] = twtInfo[-4] + getSentenceLength(sentence)
+            tokenTags = re.finditer("(\S+/\S+)", sentence)
+            for tokenTag in tokenTags:
+                tokenTagText = tokenTag.group()
+                token = getToken(tokenTagText)
+                if (isWordToken(token)):
+                    numOfWordTokens += 1
+                    twtInfo[-3] = twtInfo[-3] + len(token)
+                for i in range(len(tokenIdentifiers)):
+                    twtInfo[i] = twtInfo[i] + tokenIdentifiers[i](tokenTagText)
+        twtInfo[-4] = twtInfo[-4] / numOfSentence
+        twtInfo[-3] = twtInfo[-3] / numOfWordTokens
+        res.append(twtInfo)
+    return res
+
+if __name__ == "__main__":
+    esFile = open("test.arff", "w")
+    esFile.write("@relation TweetsFeatureInformation\n\n")
+    esFile.write(ATTR + " FirstPersonPronouns numeric\n")
+    esFile.write(ATTR + " SecondPersonPronouns numeric\n")
+    esFile.write(ATTR + " ThirdPersonPronouns numeric\n")
+    esFile.write(ATTR + " CoordinatingConjunctions numeric\n")
+    esFile.write(ATTR + " Past-tenseVerbs numeric\n")
+    esFile.write(ATTR + " Future-tenseVerbs numeric\n")
+    esFile.write(ATTR + " Commas numeric\n")
+    esFile.write(ATTR + " ColonsAndSemi-colons numeric\n")
+    esFile.write(ATTR + " Dashes numeric\n")
+    esFile.write(ATTR + " Parentheses numeric\n")
+    esFile.write(ATTR + " Ellipses numeric\n")
+    esFile.write(ATTR + " CommonNouns numeric\n")
+    esFile.write(ATTR + " ProperNouns numeric\n")
+    esFile.write(ATTR + " Adverbs numeric\n")
+    esFile.write(ATTR + " wh-words numeric\n")
+    esFile.write(ATTR + " ModernSlangAcroynms numeric\n")
+    esFile.write(ATTR + " WordsAllInUpperCase numeric\n")
+    esFile.write(ATTR + " AvgLengthOfSentences numeric\n")
+    esFile.write(ATTR + " AvgLengthOfTokens numeric\n")
+    esFile.write(ATTR + " NumOfSentences numeric\n")
+    esFile.write(ATTR + " Class numeric\n\n")
+    esFile.write("@data\n")
+    infoList = gatherFeatureInfo("text.twt")
+    for info in infoList:
+        esFile.write(','.join(str(x) for x in info) + "\n")
+
+

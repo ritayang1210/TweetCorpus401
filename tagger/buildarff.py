@@ -122,15 +122,22 @@ def isWordToken(token):
 
     return pattern.match(token) != None
 
-def gatherFeatureInfo(fileName):
+def gatherFeatureInfo(fileName, maxNumOfTweetsPerClass):
     twtFile = open(fileName, 'r')
+    numPerClass = {}
     taggedTweets = twtFile.read()
     tweets = re.finditer("<A=(\d)>\n((?:\S+/\S+\s+)+)", taggedTweets)
     res = []
     tokenIdentifiers = [isFrsPersonPron, isSecPersonPron, isThirdPersonPron, isCoordConj, isPastTenseVerbs, isFutureTenseVerbs, isCommas, isColonsSemiColons, isDashes, isParentheses, isEllipses, isCommonNouns, isProperNouns, isAdverbs, iswhWords, isModernSlangAcroynms, isUpperCaseWord]
     for tweet in tweets:
         twtInfo = [0] * 21
-        twtInfo[-1] = int(tweet.group(1))
+        tweetClass = int(tweet.group(1))
+        twtInfo[-1] = tweetClass
+        if not tweetClass in numPerClass:
+            numPerClass[tweetClass] = 0
+        if numPerClass[tweetClass] >= maxNumOfTweetsPerClass:
+            continue
+        numPerClass[tweetClass] = numPerClass[tweetClass] + 1
         sentences = filter(None, tweet.group(2).split('\n'))
         numOfSentence = len(sentences)
         twtInfo[-2] = numOfSentence
@@ -190,7 +197,7 @@ if __name__ == "__main__":
     esFile.write(ATTR + " NumOfSentences numeric\n")
     esFile.write(ATTR + " Class {0, 4}\n\n")
     esFile.write("@data\n")
-    infoList = gatherFeatureInfo(inputFile)
+    infoList = gatherFeatureInfo(inputFile, maxNumOfTweetsPerClass)
     for info in infoList:
         esFile.write(','.join(str(x) for x in info) + "\n")
 

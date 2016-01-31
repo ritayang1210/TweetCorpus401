@@ -54,9 +54,23 @@ def getDemarcation(line):
     return "<A=" + line_list[INDEX_DEMARCATION][1] +">"
 
 if __name__ == "__main__":
+    inputFile = ''
+    outputFile = ''
+    groupNumber = None
+    if len(sys.argv) == 3:
+        inputFile = sys.argv[1]
+        outputFile = sys.argv[2]
+    elif len(sys.argv) == 4:
+        inputFile = sys.argv[1]
+        groupNumber = int(sys.argv[2])
+        outputFile = sys.argv[3]
+    else:
+        print 'usage: twtt.py <inputFile> [<groupNumber>] <outputFile>'
+        sys.exit()
+
+    lines = read_file(inputFile)
+    resFile = open(outputFile, "w")
     nlp = NLPlib.NLPlib()
-    lines = read_file("../tweets/testdata.manual.2009.06.14.csv")
-    resFile = open("text.twt", "w")
     for line in lines:
         resFile.write(getDemarcation(line))
         resFile.write("\n")
@@ -75,10 +89,3 @@ if __name__ == "__main__":
             for tokenTag in tokenTagList:
                 resFile.write(tokenTag + " ")
             resFile.write("\n")
-
-
-
-
-
-    # a = getTokenTagList(extractTweetText(line))
-        # print (a)

@@ -4,19 +4,19 @@ import sys
 PATH_WORDLISTS = '../Wordlists'
 CLASSES_TO_COMPUTE = [0, 4]
 
-SLANGS = [x.lower() for x in open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()]
 FIRST_PERSON_PRON = [x.lower() for x in open(PATH_WORDLISTS + '/First-person', 'r').read().splitlines()]
 SECOND_PERSON_PRONOUNS = [x.lower() for x in open(PATH_WORDLISTS + '/Second-person', 'r').read().splitlines()]
 THIRD_PERSON_PRON = [x.lower() for x in open(PATH_WORDLISTS + '/Third-person', 'r').read().splitlines()]
-COORD_CONJUNCTIONS = ['CC']
+COORD_CONJUNCTIONS = [x.lower() for x in open(PATH_WORDLISTS + '/Conjunct', 'r').read().splitlines()]
+PAST_TENSE_VERBS_TAG = ["VBN", "VBD"]
+FUTURE_TENSE = ['\'ll', 'will', 'gonna']
 COLONS_SEMI_COLONS = [';', ':']
 PARENTHESES = ['(', ')']
 COMMON_NOUNS = ['NN', 'NNS']
-ADVERBS = ['RB', 'RBR', 'RBS']
-PAST_TENSE_VERBS_TAG = ["VBN", "VBD"]
 PROPER_NOUNS_TAG = ["NNP", "NNPS"]
-WH_Words_TAG = ["WDT", "WP", "WP$", "WRB"]
-FUTURE_TENSE = ['\'ll', 'will', 'gonna']
+ADVERBS = ['RB', 'RBR', 'RBS']
+WH_WORDS_TAG = ["WDT", "WP", "WP$", "WRB"]
+SLANGS = [x.lower() for x in open(PATH_WORDLISTS + '/Slang', 'r').read().splitlines()]
 
 ATTR = "@attribute"
 
@@ -36,9 +36,9 @@ def isThirdPersonPron(tokenTag):
     return token.lower() in THIRD_PERSON_PRON
 
 def isCoordConj(tokenTag):
-    tag = getTag(tokenTag)
+    token = getToken(tokenTag)
 
-    return tag.upper() in COORD_CONJUNCTIONS
+    return token.lower() in COORD_CONJUNCTIONS or getTag(tokenTag).upper() == 'CC'
 
 def isPastTenseVerbs(tokenTag):
     tag = getTag(tokenTag)
@@ -62,10 +62,8 @@ def isColonsSemiColons(tokenTag):
 
 def isDashes(tokenTag):
     token = getToken(tokenTag)
-    if re.match("^-+$", token):
-        return True
-    else:
-        return False
+
+    return re.match("-+", token) != None
 
 def isParentheses(tokenTag):
     token = getToken(tokenTag)
@@ -74,10 +72,8 @@ def isParentheses(tokenTag):
 
 def isEllipses(tokenTag):
     token = getToken(tokenTag)
-    if re.match("^\.{3,}$", tokenTag):
-        return True
-    else:
-        return False
+
+    return re.match("\.{3,}", tokenTag) != None
 
 def isCommonNouns(tokenTag):
     tag = getTag(tokenTag)
@@ -94,10 +90,10 @@ def isAdverbs(tokenTag):
 
     return tag.upper() in ADVERBS
 
-def iswhWords(tokenTag):
+def isWhWords(tokenTag):
     tag = getTag(tokenTag)
 
-    return tag.upper() in WH_Words_TAG
+    return tag.upper() in WH_WORDS_TAG
 
 def isModernSlangAcroynms(tokenTag):
     token = getToken(tokenTag)
@@ -131,7 +127,7 @@ def gatherFeatureInfo(fileName, maxNumOfTweetsPerClass):
     taggedTweets = twtFile.read()
     tweets = re.finditer("<A=(\d)>\n((?:\S+/\S+\s+)+)", taggedTweets)
     res = []
-    tokenIdentifiers = [isFrsPersonPron, isSecPersonPron, isThirdPersonPron, isCoordConj, isPastTenseVerbs, isFutureTenseVerbs, isCommas, isColonsSemiColons, isDashes, isParentheses, isEllipses, isCommonNouns, isProperNouns, isAdverbs, iswhWords, isModernSlangAcroynms, isUpperCaseWord]
+    tokenIdentifiers = [isFrsPersonPron, isSecPersonPron, isThirdPersonPron, isCoordConj, isPastTenseVerbs, isFutureTenseVerbs, isCommas, isColonsSemiColons, isDashes, isParentheses, isEllipses, isCommonNouns, isProperNouns, isAdverbs, isWhWords, isModernSlangAcroynms, isUpperCaseWord]
     for tweet in tweets:
         twtInfo = [0] * 21
         tweetClass = int(tweet.group(1))

@@ -46,7 +46,6 @@ def splitTrainingInstances(fileName):
         outputFile.write("Accuracy: " + accurInfo.next().group(1) + "\n")
         precInfo = re.finditer("(\d+)\s+(\d+)\s+\|\s+a\s+=\s+\d+\s+(\d+)\s+(\d+)", result)
         val = precInfo.next()
-        print val.group()
         precA = float(val.group(1))/(float(val.group(1)) + float(val.group(3)))
         precB = float(val.group(4))/(float(val.group(2)) + float(val.group(4)))
         avgPrec = (precA + precB)/2
@@ -56,11 +55,8 @@ def splitTrainingInstances(fileName):
         outputFile.write("Average precision: " + str(avgPrec)+ "\n")
         outputFile.write("Average recall: " + str(avgRecall) + "\n\n")
 
-
-
     outputFile.write("================ Average Result Report ================")
     outputFile.write("")
-
 
 if __name__ == "__main__":
     # os.system("python twtt.py ../tweets/training.1600000.processed.noemoticon.csv 141 train.twt")

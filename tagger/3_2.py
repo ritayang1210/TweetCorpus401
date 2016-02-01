@@ -2,7 +2,7 @@ import os
 
 if __name__ == '__main__':
     # Generate .twt files
-    os.system('python twtt.py ../tweets/testdata.manual.2009.06.14.csv test.twt')
+    os.system('python twtt.py ../tweets/testdata.manualSUBSET.2009.06.14.csv test.twt')
     os.system('python twtt.py ../tweets/training.1600000.processed.noemoticon.csv 141 train.twt')
 
     os.system('python buildarff.py test.twt test.arff')

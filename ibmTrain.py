@@ -126,6 +126,8 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
             raise Exception(response_dict['status_description'])
         else:
             raise Exception(response_dict['description'])
+    print r.text
+
     return r
     
 if __name__ == "__main__":

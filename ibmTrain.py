@@ -11,7 +11,7 @@
 #
 
 ###IMPORTS###################################
-#TODO: add necessary imports
+from random import randint
 
 
 ###HELPER FUNCTIONS##########################
@@ -29,10 +29,22 @@ def convert_training_csv_to_watson_csv_format(input_csv_name, group_id, output_c
 	#
 	# Returns:
 	#	None
-	
-	#TODO: Fill in this function
-	
-	return
+	input_csv = open(input_csv_name, "r")
+	inputLines = input_csv.readlines()
+	output_csv = open(output_csv_name, "w")
+	trainingData = inputLines[group_id * 5500: (group_id + 1) * 5500] + inputLines[800000 + group_id * 5500: 800000 + (group_id + 1) * 5500]
+	for i in range(len(trainingData)):
+		temp = trainingData[i].split(',"')
+		temp1 = []
+		for i in range(len(temp)):
+			if i == 0:
+				tempEle = temp[i][1:-1]
+			else:
+				tempEle = temp[i][:-2].replace(",", '","')
+			temp1.append(tempEle)
+		tempTweet = temp1[-1]+ ',' + temp1[0]+ "\n"
+		resTemp = tempTweet.replace("\t", "\\t")
+		output_csv.write(resTemp)
 	
 def extract_subset_from_csv_file(input_csv_file, n_lines_to_extract, output_file_prefix='ibmTrain'):
 	# Extracts n_lines_to_extract lines from a given csv file and writes them to 
@@ -52,11 +64,26 @@ def extract_subset_from_csv_file(input_csv_file, n_lines_to_extract, output_file
 	#		
 	# Returns:
 	#	None
-	
-	#TODO: Fill in this function
-	
-	return
-	
+	input_csv = open(input_csv_file, "r")
+	inputLines = input_csv.readlines()
+	outputFileName = output_file_prefix + str(n_lines_to_extract) + ".csv"
+	output_csv = open(outputFileName, "w")
+	countClass0 = 0
+	countClass4 = 0
+	i = randint(0,len(inputLines))
+	while (countClass0 + countClass4) < n_lines_to_extract:
+		if (i < len(inputLines)):
+			if (inputLines[i][-2] == str(0) and countClass0 < n_lines_to_extract/2):
+				output_csv.write(inputLines[i])
+				countClass0 += 1
+			elif (inputLines[i][-2] == str(4) and countClass4 < (n_lines_to_extract-(n_lines_to_extract/2))):
+				output_csv.write(inputLines[i])
+				countClass4 += 1
+			i += 1
+		else:
+			i = 0
+
+
 def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
 	# Creates a classifier using the NLClassifier service specified with username and password.
 	# Training_data for the classifier provided using an existing csv file named
@@ -90,15 +117,15 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
 	
 	return
 	
-if __name__ == "__main__":
+# if __name__ == "__main__":
 	
 	### STEP 1: Convert csv file into two-field watson format
-	input_csv_name = '<ADD FILENAME HERE>'
+	# input_csv_name = '<ADD FILENAME HERE>'
 	
 	#DO NOT CHANGE THE NAME OF THIS FILE
-	output_csv_name 'training_11000_watson_style.csv'
+	# output_csv_name 'training_11000_watson_style.csv'
 	
-	convert_training_csv_to_watson_csv_format(input_csv_name,output_csv_name)
+	# convert_training_csv_to_watson_csv_format(input_csv_name,output_csv_name)
 	
 	
 	### STEP 2: Save 11 subsets in the new format into ibmTrain#.csv files
@@ -122,5 +149,8 @@ if __name__ == "__main__":
 	# password = '<ADD PASSWORD>'
 	# create_classifier(username, password, n, input_file_prefix='ibmTrain')
 	
-	
+if __name__ == "__main__":
+	#convert_training_csv_to_watson_csv_format("tweets/training.1600000.processed.noemoticon.csv", 141, "output4.csv")
+	extract_subset_from_csv_file("output4.csv", 6)
+
 	

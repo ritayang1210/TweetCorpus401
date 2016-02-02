@@ -70,18 +70,15 @@ def extract_subset_from_csv_file(input_csv_file, n_lines_to_extract, output_file
 	output_csv = open(outputFileName, "w")
 	countClass0 = 0
 	countClass4 = 0
-	i = randint(0,len(inputLines))
-	while (countClass0 + countClass4) < n_lines_to_extract:
-		if (i < len(inputLines)):
-			if (inputLines[i][-2] == str(0) and countClass0 < n_lines_to_extract/2):
-				output_csv.write(inputLines[i])
-				countClass0 += 1
-			elif (inputLines[i][-2] == str(4) and countClass4 < (n_lines_to_extract-(n_lines_to_extract/2))):
-				output_csv.write(inputLines[i])
-				countClass4 += 1
-			i += 1
-		else:
-			i = 0
+	i = 0
+	while (countClass0 + countClass4) < n_lines_to_extract and i < len(inputLines):
+		if (inputLines[i][-2] == str(0) and countClass0 < n_lines_to_extract/2):
+			output_csv.write(inputLines[i])
+			countClass0 += 1
+		elif (inputLines[i][-2] == str(4) and countClass4 < (n_lines_to_extract-(n_lines_to_extract/2))):
+			output_csv.write(inputLines[i])
+			countClass4 += 1
+		i += 1
 
 
 def create_classifier(username, password, n, input_file_prefix='ibmTrain'):

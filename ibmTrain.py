@@ -12,6 +12,8 @@
 
 ###IMPORTS###################################
 import requests, json, sys
+import os
+import os.path 
 
 ###HELPER FUNCTIONS##########################
 
@@ -37,7 +39,7 @@ def convert_training_csv_to_watson_csv_format(input_csv_name, group_id, output_c
 
         tempTweet = '"' + temp[-1][:-2].strip() + '"' + ',' + temp[0][1:-1] + '\n'
         resTemp = tempTweet.replace("\t", "\\t")
-        output_csv.write(resTemp.decode('utf-8','ignore').encode("utf-8"))
+        output_csv.write(resTemp.decode('utf-8').encode("utf-8"))
 
 def extract_subset_from_csv_file(input_csv_file, n_lines_to_extract, output_file_prefix='ibmTrain'):
     # Extracts n_lines_to_extract lines from a given csv file and writes them to 
@@ -110,26 +112,24 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
         'training_data': open(input_file_name, 'rb'),
         'training_metadata': "{\"language\":\"en\",\"name\":\"Classifier " + str(n) + "\"}"
     }
-    # {
-    # ('training_data', (input_file_name, open(input_file_name, 'rb'))),
-    # ('training_metadata', "{\"language\":\"en\",\"name\":\"Classifier " + str(n) + "\"}")
-    # }
-
     r = requests.post(nlclassifier_service_url,
                       auth=(username, password),
                       # headers={'Content-Type': 'application/multi-part/form-data'},
                       files=files)
 
     response_dict = json.loads(r.text)
-    if not 'status' in response_dict or response_dict['status'] in ['status'] in ['Training', 'Available']:
-        if 'status_description' in response_dict:
-            raise Exception(response_dict['status_description'])
-        else:
-            raise Exception(response_dict['description'])
+    # if not 'status' in response_dict or response_dict['status'] in ['Training', 'Available']:
+    #     if 'status_description' in response_dict:
+    #         raise Exception(response_dict['status_description'])
+    #     else:
+    #         raise Exception(response_dict['description'])
     print r.text
+    if "error" in response_dict:
+    	errorMsg = response_dict['error'] + ": " + response_dict['description']
+    	raise Exception(errorMsg)
+    else:
+    	return r
 
-    return r
-    
 if __name__ == "__main__":
     
     ### STEP 1: Convert csv file into two-field watson format

@@ -288,26 +288,32 @@ def compute_average_confidence_of_single_classifier(classifier_dict, input_csv_f
     
     #TODO: fill in this function
     inputFile = open(input_csv_file_name, "r")
-    inputLines = inputFile.readlines()
-    correct = 0
-    correctConf = 0
-    incorrectConf = 0
-    total = len(inputLines)
-    i = 0
-    while i < total:
-        for ele in classifier_dict[i]['classes']:
-            if classifier_dict[i]['top_class'] in ele['class_name']:
-                conf =  ele['confidence']
-        if classifier_dict[i]['top_class'] == inputLines[i][1]:
-            correct += 1
-            correctConf += conf
-        else:
-            incorrectConf += conf
-        i += 1
-    avgCor = correctConf/correct
-    avgIncor = incorrectConf/(total - correct)
-    return avgCor, avgIncor
+    lines = [line for line in inputFile.readlines() if line.strip()]
 
+    class0_correct = 0
+    class0_incorrect = 0
+    class0_total = 0
+    class4_correct = 0
+    class4_incorrect = 0
+    class4_total = 0
+
+    for i in range(len(lines)):
+        line = lines[i]
+        actuall_class = line[1]
+        predicted_class = classifier_dict[i]['top_class']
+        confidence = 0.0
+        for cla in classifier_dict[i]['classes']:
+            if cla['class_name'] == actuall_class:
+                confidence = cla['confidence']
+                break
+        class0_total += actuall_class == '0'
+        class4_total += actuall_class == '4'
+        class0_correct += confidence if predicted_class == actuall_class == '0' else 0.0
+        class4_correct += confidence if predicted_class == actuall_class == '4' else 0.0
+        class0_incorrect += confidence if predicted_class != actuall_class == '0' else 0.0
+        class4_incorrect += confidence if predicted_class != actuall_class == '4' else 0.0
+
+    return (class0_correct + class0_incorrect) / class0_total, (class4_correct + class4_incorrect) / class4_total
 
 if __name__ == "__main__":
 
@@ -324,11 +330,11 @@ if __name__ == "__main__":
     outputFile = open("4output.txt", "w")
     for classifier in clists:
         accuracy = compute_accuracy_of_single_classifier(clists[classifier], input_test_data)
-        outputFile.write('acurracy of' + str(classifier) + ": " + str(accuracy) + '\n')
+        outputFile.write('acurracy of ' + str(classifier) + ": " + str(accuracy) + '\n\n')
     #STEP 4: Compute the confidence of each class for each classifier
+        avg_class0_conf, avg_class4_conf = compute_average_confidence_of_single_classifier(clists[classifier], input_test_data)
+        outputFile.write('average confidence of class 0 using classfier ' + str(classifier) + ": " + str(avg_class0_conf) + '\n')
+        outputFile.write('average confidence of class 4 using classfier ' + str(classifier) + ": " + str(avg_class4_conf) + '\n\n')
 
 
 
-
-    
-    

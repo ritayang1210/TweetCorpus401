@@ -13,7 +13,6 @@
 ###IMPORTS###################################
 import requests, json, sys
 import os
-import os.path 
 
 ###HELPER FUNCTIONS##########################
 
@@ -39,7 +38,7 @@ def convert_training_csv_to_watson_csv_format(input_csv_name, group_id, output_c
 
         tempTweet = '"' + temp[-1][:-2].strip() + '"' + ',' + temp[0][1:-1] + '\n'
         resTemp = tempTweet.replace("\t", "\\t")
-        output_csv.write(resTemp.decode('utf-8').encode("utf-8"))
+        output_csv.write(resTemp.decode('utf-8','ignore').encode("utf-8"))
 
 def extract_subset_from_csv_file(input_csv_file, n_lines_to_extract, output_file_prefix='ibmTrain'):
     # Extracts n_lines_to_extract lines from a given csv file and writes them to 
@@ -147,10 +146,9 @@ if __name__ == "__main__":
     #
     # you should make use of the following function call:
     #
-    n_lines_to_extract = 500
-    while n_lines_to_extract <= 5500:
+    training_set_sizes = [500, 2500, 5000]
+    for n_lines_to_extract in training_set_sizes:
         extract_subset_from_csv_file(output_csv_name, n_lines_to_extract)
-        n_lines_to_extract += 500
     
     ### STEP 3: Create the classifiers using Watson
     
@@ -159,11 +157,9 @@ if __name__ == "__main__":
     # 
     #
     # you should make use of the following function call
-    n = 500
     username = '7d6041e2-25af-4c5d-904e-9ef15a381aaa'
     password = 'HL5SUjigee6W'
 
-    while n <= 5500:
+    for n in training_set_sizes:
         create_classifier(username, password, n, input_file_prefix='ibmTrain')
-        n += 500
 

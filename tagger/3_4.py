@@ -1,10 +1,12 @@
 import os
 import re
+from scipy import stats
 
-def splitTrainingInstances(fileName):
+def splitTrainingInstances(fileName, classifier):
     inputFile = open(fileName, 'r')
     trainingInstances = inputFile.read()
     tweets = re.finditer("<A=(\d)>\n((?:\S+/\S+\s+)+)", trainingInstances)
+    accuracies = []
     groups = [[], [], [], [], [], [], [], [], [], []]
     i = 0
     while i < 10:
@@ -21,7 +23,7 @@ def splitTrainingInstances(fileName):
             groups[i].append(tweets.next().group())
             k += 1
         i += 1
-    outputFile = open("3_4output.txt", "w", 0) 
+    outputFile = open("3_4output_" + classifier +  ".txt", "w", 0) 
     for i in range(len(groups)):
         testFile = open("testFile.twt", "w", 0) 
         testFile.write(''.join(groups[i]))
@@ -38,12 +40,14 @@ def splitTrainingInstances(fileName):
         trainingFile.close()
 
         os.system("python buildarff.py trainingFile.twt trainingFile.arff")
-        os.system("java -cp ../WEKA/weka.jar weka.classifiers.trees.J48 -t trainingFile.arff -T testFile.arff > temp.txt")
+        os.system("java -cp /u/cs401/WEKA/weka.jar " + classifier + " -t trainingFile.arff -T testFile.arff > temp.txt")
         tempOutput = open("temp.txt", "r")
         result = ''.join(tempOutput.readlines()[-19:])
         outputFile.write(result)
         accurInfo = re.finditer("Correctly Classified Instances\s+\d+\s+(\d+.?\d+\s+%)", result)
-        outputFile.write("Accuracy: " + accurInfo.next().group(1) + "\n")
+        accuracy = accurInfo.next().group(1)
+        outputFile.write("Accuracy: " + accuracy + "\n")
+        accuracies.append(float(accuracy))
         precInfo = re.finditer("(\d+)\s+(\d+)\s+\|\s+a\s+=\s+\d+\s+(\d+)\s+(\d+)", result)
         val = precInfo.next()
         precA = float(val.group(1))/(float(val.group(1)) + float(val.group(3)))
@@ -57,8 +61,26 @@ def splitTrainingInstances(fileName):
 
     outputFile.write("================ Average Result Report ================")
     outputFile.write("")
+    outputFile.close()
+    return accuracies
 
 if __name__ == "__main__":
-    # os.system("python twtt.py ../tweets/training.1600000.processed.noemoticon.csv 141 train.twt")
-    splitTrainingInstances("train.twt")
+    os.system("python twtt.py /u/cs401/A1/tweets/training.1600000.processed.noemoticon.csv 141 train.twt")
+    classifiers = ['weka.classifiers.trees.J48', 'weka.classifiers.bayes.NaiveBayes', 'weka.classifiers.functions.SMO']
+    accuracy_dict = {}
+    for classifier in classifiers:
+        accuracy_dict[classifier] = splitTrainingInstances("train.twt", classifier)
+
+    outputFile = open("3_4output_pvalue.txt", "w", 0)
+    outputFile.write('weka.classifiers.trees.J48 and weka.classifiers.bayes.NaiveBayes\n')
+    outputFile.write(str(stats.ttest_rel(accuracy_dict['weka.classifiers.trees.J48'], accuracy_dict['weka.classifiers.bayes.NaiveBayes'])) + '\n\n')
+
+    outputFile.write('weka.classifiers.bayes.NaiveBayes and weka.classifiers.functions.SMO\n')
+    outputFile.write(str(stats.ttest_rel(accuracy_dict['weka.classifiers.bayes.NaiveBayes'], accuracy_dict['weka.classifiers.functions.SMO'])) + '\n\n')
+
+    outputFile.write('weka.classifiers.functions.SMO and weka.classifiers.trees.J48\n')
+    outputFile.write(str(stats.ttest_rel(accuracy_dict['weka.classifiers.functions.SMO'], accuracy_dict['weka.classifiers.trees.J48'])) + '\n\n')
+
+    outputFile.close()
+
 

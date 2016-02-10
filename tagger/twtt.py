@@ -8,6 +8,10 @@ sys.setdefaultencoding("latin-1")
 INDEX_TWEET_TEXT = 5
 INDEX_DEMARCATION = 0
 
+ABBREV_FILES_PATH = '/u/cs401/Wordlists/'
+ABBREV_FILES = ['abbrev.english', 'pn_abbrev.english', 'pn_abbrev.english2']
+SUFFIX_ABBREV = '_DOT'
+
 def read_file(file_name):
     """(str of file name) ->Table
     Input a string which is the file name of a table
@@ -20,7 +24,7 @@ def read_file(file_name):
 
 def extractTweetText(line):
     line_list = line.split(',"')
-    return line_list[INDEX_TWEET_TEXT][:-2]
+    return line_list[INDEX_TWEET_TEXT].strip()[:-1].strip()
 
 def removeHTMLTagAttr(sentence):
     return re.sub('<[^<]+?>', '', sentence)
@@ -38,12 +42,21 @@ def removeFirstCharOfUserNameHashTag(sentence):
 def getSentences(tweetText):
     return re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?|\!)\s?', tweetText)
 
+def decorateAbbrev(tweetText):
+    for abbrevFilePath in ABBREV_FILES:
+        abbrevFile = open(ABBREV_FILES_PATH + abbrevFilePath, 'r')
+        for line in abbrevFile.readlines():
+            line = line.strip()
+            tweetText = tweetText.replace(' ' + line, ' ' + line[:-1] + '_DOT')
+
+    return tweetText
+
 def getTokenTagList(nlp, sentence):
     it = re.finditer(r"\w+|'\w+|[^\w\s]+", sentence)
     tokens = []
     for match in it:
-        tokens.append(match.group())
-    
+        tokens.append(match.group().replace(SUFFIX_ABBREV, '.'))
+
     nlpRes = nlp.tag(tokens)
     res = []
     for i in range(len(tokens)):
@@ -84,15 +97,13 @@ if __name__ == "__main__":
         resFile.write(getDemarcation(line))
         resFile.write("\n")
         tweetText = extractTweetText(line)
+        tweetText = decorateAbbrev(tweetText)
         for sentence in getSentences(tweetText):
             sentence = removeURL(sentence)
             sentence = replaceHTMLChars(sentence)
             sentence = removeFirstCharOfUserNameHashTag(sentence)
             sentence = removeHTMLTagAttr(sentence)
             sentence = sentence.strip()
-
-            if not sentence:
-                continue
 
             tokenTagList = getTokenTagList(nlp, sentence)
             for tokenTag in tokenTagList:

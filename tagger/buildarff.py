@@ -1,7 +1,7 @@
 import re
 import sys
 
-PATH_WORDLISTS = '../Wordlists'
+PATH_WORDLISTS = '/u/cs401/Wordlists'
 CLASSES_TO_COMPUTE = [0, 4]
 
 FIRST_PERSON_PRON = [x.lower() for x in open(PATH_WORDLISTS + '/First-person', 'r').read().splitlines()]

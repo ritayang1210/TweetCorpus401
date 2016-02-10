@@ -132,7 +132,7 @@ def create_classifier(username, password, n, input_file_prefix='ibmTrain'):
 if __name__ == "__main__":
     
     ### STEP 1: Convert csv file into two-field watson format
-    input_csv_name = 'tweets/training.1600000.processed.noemoticon.csv'
+    input_csv_name = '/u/cs401/A1/tweets/training.1600000.processed.noemoticon.csv'
     
     #DO NOT CHANGE THE NAME OF THIS FILE
     output_csv_name = 'training_11000_watson_style.csv'

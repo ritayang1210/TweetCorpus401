@@ -317,7 +317,7 @@ def compute_average_confidence_of_single_classifier(classifier_dict, input_csv_f
 
 if __name__ == "__main__":
 
-    input_test_data = "tweets/testdata.manualSUBSET.2009.06.14.csv"
+    input_test_data = "/u/cs401/A1/tweets/testdata.manualSUBSET.2009.06.14.csv"
     username = "7d6041e2-25af-4c5d-904e-9ef15a381aaa"
     password = "HL5SUjigee6W"
     idList = get_classifier_ids(username,password)

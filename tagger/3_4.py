@@ -47,7 +47,7 @@ def splitTrainingInstances(fileName, classifier):
         accurInfo = re.finditer("Correctly Classified Instances\s+\d+\s+(\d+.?\d+\s+%)", result)
         accuracy = accurInfo.next().group(1)
         outputFile.write("Accuracy: " + accuracy + "\n")
-        accuracies.append(float(accuracy))
+        accuracies.append(float(accuracy.split(' ')[0]))
         precInfo = re.finditer("(\d+)\s+(\d+)\s+\|\s+a\s+=\s+\d+\s+(\d+)\s+(\d+)", result)
         val = precInfo.next()
         precA = float(val.group(1))/(float(val.group(1)) + float(val.group(3)))

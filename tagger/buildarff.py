@@ -150,8 +150,8 @@ def gatherFeatureInfo(fileName, maxNumOfTweetsPerClass):
                     twtInfo[-3] = twtInfo[-3] + len(token)
                 for i in range(len(tokenIdentifiers)):
                     twtInfo[i] = twtInfo[i] + tokenIdentifiers[i](tokenTagText)
-        twtInfo[-4] = twtInfo[-4] / numOfSentence
-        twtInfo[-3] = twtInfo[-3] / numOfWordTokens
+        twtInfo[-4] = float(twtInfo[-4]) / numOfSentence
+        twtInfo[-3] = float(twtInfo[-3]) / numOfWordTokens
         res.append(twtInfo)
     return res
 

@@ -69,7 +69,7 @@ def extract_subset_from_csv_file(input_csv_file, n_lines_to_extract, output_file
         if (inputLines[i][-2] == str(0) and countClass0 < n_lines_to_extract):
             output_csv.write(inputLines[i])
             countClass0 += 1
-        elif (inputLines[i][-2] == str(4) and countClass4 < (n_lines_to_extract-(n_lines_to_extract))):
+        elif (inputLines[i][-2] == str(4) and countClass4 < n_lines_to_extract):
             output_csv.write(inputLines[i])
             countClass4 += 1
         i += 1

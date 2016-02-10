@@ -23,7 +23,7 @@ def splitTrainingInstances(fileName, classifier):
             groups[i].append(tweets.next().group())
             k += 1
         i += 1
-    outputFile = open("3_4output_" + classifier +  ".txt", "w", 0) 
+    outputFile = open("3.4output_" + classifier +  ".txt", "w", 0) 
     for i in range(len(groups)):
         testFile = open("testFile.twt", "w", 0) 
         testFile.write(''.join(groups[i]))
@@ -71,7 +71,7 @@ if __name__ == "__main__":
     for classifier in classifiers:
         accuracy_dict[classifier] = splitTrainingInstances("train.twt", classifier)
 
-    outputFile = open("3_4output_pvalue.txt", "w", 0)
+    outputFile = open("3.4output_pvalue.txt", "w", 0)
     outputFile.write('weka.classifiers.trees.J48 and weka.classifiers.bayes.NaiveBayes\n')
     outputFile.write(str(stats.ttest_rel(accuracy_dict['weka.classifiers.trees.J48'], accuracy_dict['weka.classifiers.bayes.NaiveBayes'])) + '\n\n')
 

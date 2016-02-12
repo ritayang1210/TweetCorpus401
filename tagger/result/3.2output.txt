@@ -1,0 +1,210 @@
+================ Result for training data with size 1000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         182               50.6964 %
+Incorrectly Classified Instances       177               49.3036 %
+Kappa statistic                          0.0117
+Mean absolute error                      0.5058
+Root mean squared error                  0.6172
+Relative absolute error                101.1698 %
+Root relative squared error            123.4312 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  75 102 |   a = 0
+  75 107 |   b = 4
+
+================ Result for training data with size 2000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         195               54.3175 %
+Incorrectly Classified Instances       164               45.6825 %
+Kappa statistic                          0.084 
+Mean absolute error                      0.4843
+Root mean squared error                  0.5972
+Relative absolute error                 96.8629 %
+Root relative squared error            119.4485 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  80  97 |   a = 0
+  67 115 |   b = 4
+
+================ Result for training data with size 3000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         198               55.1532 %
+Incorrectly Classified Instances       161               44.8468 %
+Kappa statistic                          0.1004
+Mean absolute error                      0.468 
+Root mean squared error                  0.5793
+Relative absolute error                 93.5994 %
+Root relative squared error            115.8631 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  79  98 |   a = 0
+  63 119 |   b = 4
+
+================ Result for training data with size 4000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         195               54.3175 %
+Incorrectly Classified Instances       164               45.6825 %
+Kappa statistic                          0.0843
+Mean absolute error                      0.4751
+Root mean squared error                  0.6053
+Relative absolute error                 95.0221 %
+Root relative squared error            121.0554 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  82  95 |   a = 0
+  69 113 |   b = 4
+
+================ Result for training data with size 5000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         195               54.3175 %
+Incorrectly Classified Instances       164               45.6825 %
+Kappa statistic                          0.0843
+Mean absolute error                      0.4703
+Root mean squared error                  0.5923
+Relative absolute error                 94.0567 %
+Root relative squared error            118.4536 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  82  95 |   a = 0
+  69 113 |   b = 4
+
+================ Result for training data with size 6000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         187               52.0891 %
+Incorrectly Classified Instances       172               47.9109 %
+Kappa statistic                          0.04  
+Mean absolute error                      0.4883
+Root mean squared error                  0.6079
+Relative absolute error                 97.6676 %
+Root relative squared error            121.585  %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  80  97 |   a = 0
+  75 107 |   b = 4
+
+================ Result for training data with size 7000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         206               57.3816 %
+Incorrectly Classified Instances       153               42.6184 %
+Kappa statistic                          0.1465
+Mean absolute error                      0.4527
+Root mean squared error                  0.5661
+Relative absolute error                 90.5434 %
+Root relative squared error            113.2177 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  93  84 |   a = 0
+  69 113 |   b = 4
+
+================ Result for training data with size 8000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         203               56.546  %
+Incorrectly Classified Instances       156               43.454  %
+Kappa statistic                          0.1297
+Mean absolute error                      0.4645
+Root mean squared error                  0.576 
+Relative absolute error                 92.9011 %
+Root relative squared error            115.2033 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  91  86 |   a = 0
+  70 112 |   b = 4
+
+================ Result for training data with size 9000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         195               54.3175 %
+Incorrectly Classified Instances       164               45.6825 %
+Kappa statistic                          0.0845
+Mean absolute error                      0.4656
+Root mean squared error                  0.5727
+Relative absolute error                 93.1233 %
+Root relative squared error            114.5457 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  83  94 |   a = 0
+  70 112 |   b = 4
+
+================ Result for training data with size 10000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         202               56.2674 %
+Incorrectly Classified Instances       157               43.7326 %
+Kappa statistic                          0.1233
+Mean absolute error                      0.4631
+Root mean squared error                  0.5812
+Relative absolute error                 92.6126 %
+Root relative squared error            116.2376 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  85  92 |   a = 0
+  65 117 |   b = 4
+
+================ Result for training data with size 11000 ================
+=== Error on test data ===
+
+Correctly Classified Instances         191               53.2033 %
+Incorrectly Classified Instances       168               46.7967 %
+Kappa statistic                          0.0621
+Mean absolute error                      0.4862
+Root mean squared error                  0.5966
+Relative absolute error                 97.2369 %
+Root relative squared error            119.3106 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  81  96 |   a = 0
+  72 110 |   b = 4
+
+We can see that we are right now achieving the best accuracy with size 7000 or 3500 per class. With size either greater or smaller than 7000, we are having decline in the accuracy. Usually, we would expect that the accuracy increases as data size increases since it could cover more possible cases in each class and lower the effect of outliers. Therefore it makes sense that we are having better performance for size 7000 than smaller. However, it's unusual that the accuracy is decreasing once we have data size greater 7000. It could be that the proportion of outliers and noise is considerably larger in the last part of the data. Also, since we are using decision tree model here, it's quite possible we are having overfitting issue which reduces the training set error at the cost of an decreased test set error. 

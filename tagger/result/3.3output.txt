@@ -1,0 +1,71 @@
+================ Result for training data with size 500 ================
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 Class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02493   19 AvgLengthOfTokens
+ 0.02411    1 FirstPersonPronouns
+ 0.01296    2 SecondPersonPronouns
+ 0.01041    5 Past-tenseVerbs
+ 0.00824   14 Adverbs
+ 0.00756    3 ThirdPersonPronouns
+ 0          8 ColonsAndSemi-colons
+ 0          9 Dashes
+ 0          4 CoordinatingConjunctions
+ 0          7 Commas
+ 0          6 Future-tenseVerbs
+ 0         17 WordsAllInUpperCase
+ 0         16 ModernSlangAcroynms
+ 0         20 NumOfSentences
+ 0         18 AvgLengthOfSentences
+ 0         11 Ellipses
+ 0         10 Parentheses
+ 0         15 wh-words
+ 0         12 CommonNouns
+ 0         13 ProperNouns
+
+Selected attributes: 19,1,2,5,14,3,8,9,4,7,6,17,16,20,18,11,10,15,12,13 : 20
+
+================ Result for training data with size 5500 ================
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 Class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02959     1 FirstPersonPronouns
+ 0.027122   19 AvgLengthOfTokens
+ 0.012691    2 SecondPersonPronouns
+ 0.01151     5 Past-tenseVerbs
+ 0.008409   14 Adverbs
+ 0.003466   13 ProperNouns
+ 0.002748    9 Dashes
+ 0.002135   11 Ellipses
+ 0.002025    7 Commas
+ 0.001704   18 AvgLengthOfSentences
+ 0.001622    4 CoordinatingConjunctions
+ 0.001298   12 CommonNouns
+ 0.001155   10 Parentheses
+ 0.000783    6 Future-tenseVerbs
+ 0           3 ThirdPersonPronouns
+ 0          20 NumOfSentences
+ 0          17 WordsAllInUpperCase
+ 0           8 ColonsAndSemi-colons
+ 0          16 ModernSlangAcroynms
+ 0          15 wh-words
+
+Selected attributes: 1,19,2,5,14,13,9,11,7,18,4,12,10,6,3,20,17,8,16,15 : 20
+
+We notice that SecondPersonPronouns, Past-tenseVerbs and Adverbs are of the same importance at both low and high amounts of input data. We also notice that FirstPersonPronouns and AvgLengthOfTokens are of similar importance as they just switched their ranking as top and second. FirstPersonPronouns, SecondPersonPronouns, Past-tenseVerbs and Adverbs seem to be the most important properties of english sentences. Their importance is so obvious that we can still tell even if the data size is small because almost all english sentences will contain them. AvgLengthOfTokens are of similar importance because it's not sensitive to data size. Even if we just have 10 sentences, we can still calculate the AvgLengthOfTokens and we will still probably conclude with same importance rank for it.

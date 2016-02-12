@@ -1,0 +1,15 @@
+acurracy of Classifier 500: 0.674094707521
+average confidence of class 0 using classfier Classifier 500: 0.62036471562
+average confidence of class 4 using classfier Classifier 500: 0.718620250218
+
+acurracy of Classifier 2500: 0.710306406685
+average confidence of class 0 using classfier Classifier 2500: 0.67257316652
+average confidence of class 4 using classfier Classifier 2500: 0.715072827935
+
+acurracy of Classifier 5000: 0.74930362117
+average confidence of class 0 using classfier Classifier 5000: 0.722959792618
+average confidence of class 4 using classfier Classifier 5000: 0.740313696268
+
+As we can see, the accuracy is increasing as we increase the data size. This is different from what we saw in section 3.2 where we were achieving the best performance at data size 7000(or 3500 for each class) but having poorer performance with both bigger and smaller data sizes. Also the best accracy we got from section 3.2 is 0.57. It is much lower than what we got using IBM NL claasifiers and even lower than the worst accuracy we got here (0.67 using data size 1000 or 500 for each class).
+
+For confidence, we are seeing the similar pattern that with bigger data size, we are gaining higher confidence for both classes.

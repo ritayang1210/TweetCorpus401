@@ -1,0 +1,714 @@
+===================================== Naive Bayes =====================================
+================ Result for partition d1 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         666               60.5455 %
+Incorrectly Classified Instances       434               39.4545 %
+Kappa statistic                          0.2109
+Mean absolute error                      0.4401
+Root mean squared error                  0.5035
+Relative absolute error                 88.0152 %
+Root relative squared error            100.6943 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 346 204 |   a = 0
+ 230 320 |   b = 4
+
+Accuracy: 60.5455 %
+Average precision: 0.605690733673
+Average recall: 0.605454545455
+
+================ Result for partition d2 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         654               59.4545 %
+Incorrectly Classified Instances       446               40.5455 %
+Kappa statistic                          0.1891
+Mean absolute error                      0.4371
+Root mean squared error                  0.51  
+Relative absolute error                 87.4244 %
+Root relative squared error            101.9925 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 299 251 |   a = 0
+ 195 355 |   b = 4
+
+Accuracy: 59.4545 %
+Average precision: 0.595535869376
+Average recall: 0.594545454545
+
+================ Result for partition d3 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         663               60.2727 %
+Incorrectly Classified Instances       437               39.7273 %
+Kappa statistic                          0.2055
+Mean absolute error                      0.4344
+Root mean squared error                  0.5039
+Relative absolute error                 86.872  %
+Root relative squared error            100.7743 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 346 204 |   a = 0
+ 233 317 |   b = 4
+
+Accuracy: 60.2727 %
+Average precision: 0.603013667751
+Average recall: 0.602727272727
+
+================ Result for partition d4 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         669               60.8182 %
+Incorrectly Classified Instances       431               39.1818 %
+Kappa statistic                          0.2164
+Mean absolute error                      0.4366
+Root mean squared error                  0.5034
+Relative absolute error                 87.3181 %
+Root relative squared error            100.683  %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 362 188 |   a = 0
+ 243 307 |   b = 4
+
+Accuracy: 60.8182 %
+Average precision: 0.60927456382
+Average recall: 0.608181818182
+
+================ Result for partition d5 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         684               62.1818 %
+Incorrectly Classified Instances       416               37.8182 %
+Kappa statistic                          0.2436
+Mean absolute error                      0.4253
+Root mean squared error                  0.4869
+Relative absolute error                 85.0624 %
+Root relative squared error             97.3873 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 327 223 |   a = 0
+ 193 357 |   b = 4
+
+Accuracy: 62.1818 %
+Average precision: 0.622181697613
+Average recall: 0.621818181818
+
+================ Result for partition d6 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         665               60.4545 %
+Incorrectly Classified Instances       435               39.5455 %
+Kappa statistic                          0.2091
+Mean absolute error                      0.4468
+Root mean squared error                  0.5105
+Relative absolute error                 89.353  %
+Root relative squared error            102.1019 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 324 226 |   a = 0
+ 209 341 |   b = 4
+
+Accuracy: 60.4545 %
+Average precision: 0.604645429849
+Average recall: 0.604545454545
+
+================ Result for partition d7 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         669               60.8182 %
+Incorrectly Classified Instances       431               39.1818 %
+Kappa statistic                          0.2164
+Mean absolute error                      0.4315
+Root mean squared error                  0.5036
+Relative absolute error                 86.3055 %
+Root relative squared error            100.7222 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 332 218 |   a = 0
+ 213 337 |   b = 4
+
+Accuracy: 60.8182 %
+Average precision: 0.608190759567
+Average recall: 0.608181818182
+
+================ Result for partition d8 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         672               61.0909 %
+Incorrectly Classified Instances       428               38.9091 %
+Kappa statistic                          0.2218
+Mean absolute error                      0.4424
+Root mean squared error                  0.5107
+Relative absolute error                 88.473  %
+Root relative squared error            102.1379 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 337 213 |   a = 0
+ 215 335 |   b = 4
+
+Accuracy: 61.0909 %
+Average precision: 0.610910557495
+Average recall: 0.610909090909
+
+================ Result for partition d9 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         674               61.2727 %
+Incorrectly Classified Instances       426               38.7273 %
+Kappa statistic                          0.2255
+Mean absolute error                      0.4401
+Root mean squared error                  0.5045
+Relative absolute error                 88.0172 %
+Root relative squared error            100.9028 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 322 228 |   a = 0
+ 198 352 |   b = 4
+
+Accuracy: 61.2727 %
+Average precision: 0.613063660477
+Average recall: 0.612727272727
+
+================ Result for partition d10 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         668               60.7273 %
+Incorrectly Classified Instances       432               39.2727 %
+Kappa statistic                          0.2145
+Mean absolute error                      0.4367
+Root mean squared error                  0.4999
+Relative absolute error                 87.3407 %
+Root relative squared error             99.9716 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 326 224 |   a = 0
+ 208 342 |   b = 4
+
+Accuracy: 60.7273 %
+Average precision: 0.607363587036
+Average recall: 0.607272727273
+
+
+
+
+===================================== SVM =====================================
+================ Result for partition d1 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         714               64.9091 %
+Incorrectly Classified Instances       386               35.0909 %
+Kappa statistic                          0.2982
+Mean absolute error                      0.3509
+Root mean squared error                  0.5924
+Relative absolute error                 70.1818 %
+Root relative squared error            118.4752 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 366 184 |   a = 0
+ 202 348 |   b = 4
+
+Accuracy: 64.9091 %
+Average precision: 0.649250767764
+Average recall: 0.649090909091
+
+================ Result for partition d2 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         699               63.5455 %
+Incorrectly Classified Instances       401               36.4545 %
+Kappa statistic                          0.2709
+Mean absolute error                      0.3645
+Root mean squared error                  0.6038
+Relative absolute error                 72.9091 %
+Root relative squared error            120.7552 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 340 210 |   a = 0
+ 191 359 |   b = 4
+
+Accuracy: 63.5455 %
+Average precision: 0.635616388483
+Average recall: 0.635454545455
+
+================ Result for partition d3 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         700               63.6364 %
+Incorrectly Classified Instances       400               36.3636 %
+Kappa statistic                          0.2727
+Mean absolute error                      0.3636
+Root mean squared error                  0.603 
+Relative absolute error                 72.7273 %
+Root relative squared error            120.6045 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 334 216 |   a = 0
+ 184 366 |   b = 4
+
+Accuracy: 63.6364 %
+Average precision: 0.636826812085
+Average recall: 0.636363636364
+
+================ Result for partition d4 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         692               62.9091 %
+Incorrectly Classified Instances       408               37.0909 %
+Kappa statistic                          0.2582
+Mean absolute error                      0.3709
+Root mean squared error                  0.609 
+Relative absolute error                 74.1818 %
+Root relative squared error            121.8046 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 339 211 |   a = 0
+ 197 353 |   b = 4
+
+Accuracy: 62.9091 %
+Average precision: 0.629174605695
+Average recall: 0.629090909091
+
+================ Result for partition d5 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         717               65.1818 %
+Incorrectly Classified Instances       383               34.8182 %
+Kappa statistic                          0.3036
+Mean absolute error                      0.3482
+Root mean squared error                  0.5901
+Relative absolute error                 69.6364 %
+Root relative squared error            118.0139 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 343 207 |   a = 0
+ 176 374 |   b = 4
+
+Accuracy: 65.1818 %
+Average precision: 0.65230202395
+Average recall: 0.651818181818
+
+================ Result for partition d6 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         684               62.1818 %
+Incorrectly Classified Instances       416               37.8182 %
+Kappa statistic                          0.2436
+Mean absolute error                      0.3782
+Root mean squared error                  0.615 
+Relative absolute error                 75.6364 %
+Root relative squared error            122.993  %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 333 217 |   a = 0
+ 199 351 |   b = 4
+
+Accuracy: 62.1818 %
+Average precision: 0.621948798051
+Average recall: 0.621818181818
+
+================ Result for partition d7 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         705               64.0909 %
+Incorrectly Classified Instances       395               35.9091 %
+Kappa statistic                          0.2818
+Mean absolute error                      0.3591
+Root mean squared error                  0.5992
+Relative absolute error                 71.8182 %
+Root relative squared error            119.8484 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 346 204 |   a = 0
+ 191 359 |   b = 4
+
+Accuracy: 64.0909 %
+Average precision: 0.640987857679
+Average recall: 0.640909090909
+
+================ Result for partition d8 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         676               61.4545 %
+Incorrectly Classified Instances       424               38.5455 %
+Kappa statistic                          0.2291
+Mean absolute error                      0.3855
+Root mean squared error                  0.6208
+Relative absolute error                 77.0909 %
+Root relative squared error            124.17   %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 324 226 |   a = 0
+ 198 352 |   b = 4
+
+Accuracy: 61.4545 %
+Average precision: 0.614843097482
+Average recall: 0.614545454545
+
+================ Result for partition d9 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         685               62.2727 %
+Incorrectly Classified Instances       415               37.7273 %
+Kappa statistic                          0.2455
+Mean absolute error                      0.3773
+Root mean squared error                  0.6142
+Relative absolute error                 75.4545 %
+Root relative squared error            122.8451 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 320 230 |   a = 0
+ 185 365 |   b = 4
+
+Accuracy: 62.2727 %
+Average precision: 0.623554372244
+Average recall: 0.622727272727
+
+================ Result for partition d10 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         711               64.6364 %
+Incorrectly Classified Instances       389               35.3636 %
+Kappa statistic                          0.2927
+Mean absolute error                      0.3536
+Root mean squared error                  0.5947
+Relative absolute error                 70.7273 %
+Root relative squared error            118.9347 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 333 217 |   a = 0
+ 172 378 |   b = 4
+
+Accuracy: 64.6364 %
+Average precision: 0.647350029121
+Average recall: 0.646363636364
+
+
+
+
+===================================== Decision Tree =====================================
+================ Result for partition d1 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         657               59.7273 %
+Incorrectly Classified Instances       443               40.2727 %
+Kappa statistic                          0.1945
+Mean absolute error                      0.4446
+Root mean squared error                  0.556 
+Relative absolute error                 88.9232 %
+Root relative squared error            111.2011 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 332 218 |   a = 0
+ 225 325 |   b = 4
+
+Accuracy: 59.7273 %
+Average precision: 0.597288486399
+Average recall: 0.597272727273
+
+================ Result for partition d2 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         651               59.1818 %
+Incorrectly Classified Instances       449               40.8182 %
+Kappa statistic                          0.1836
+Mean absolute error                      0.452 
+Root mean squared error                  0.5611
+Relative absolute error                 90.4059 %
+Root relative squared error            112.2257 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 326 224 |   a = 0
+ 225 325 |   b = 4
+
+Accuracy: 59.1818 %
+Average precision: 0.59181848535
+Average recall: 0.591818181818
+
+================ Result for partition d3 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         646               58.7273 %
+Incorrectly Classified Instances       454               41.2727 %
+Kappa statistic                          0.1745
+Mean absolute error                      0.4562
+Root mean squared error                  0.5604
+Relative absolute error                 91.2314 %
+Root relative squared error            112.0851 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 330 220 |   a = 0
+ 234 316 |   b = 4
+
+Accuracy: 58.7273 %
+Average precision: 0.587329310892
+Average recall: 0.587272727273
+
+================ Result for partition d4 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         619               56.2727 %
+Incorrectly Classified Instances       481               43.7273 %
+Kappa statistic                          0.1255
+Mean absolute error                      0.4793
+Root mean squared error                  0.585 
+Relative absolute error                 95.8602 %
+Root relative squared error            116.9939 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 304 246 |   a = 0
+ 235 315 |   b = 4
+
+Accuracy: 56.2727 %
+Average precision: 0.562752373677
+Average recall: 0.562727272727
+
+================ Result for partition d5 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         655               59.5455 %
+Incorrectly Classified Instances       445               40.4545 %
+Kappa statistic                          0.1909
+Mean absolute error                      0.4516
+Root mean squared error                  0.5608
+Relative absolute error                 90.3231 %
+Root relative squared error            112.1587 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 307 243 |   a = 0
+ 202 348 |   b = 4
+
+Accuracy: 59.5455 %
+Average precision: 0.595987952889
+Average recall: 0.595454545455
+
+================ Result for partition d6 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         626               56.9091 %
+Incorrectly Classified Instances       474               43.0909 %
+Kappa statistic                          0.1382
+Mean absolute error                      0.4604
+Root mean squared error                  0.5761
+Relative absolute error                 92.0819 %
+Root relative squared error            115.2209 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 310 240 |   a = 0
+ 234 316 |   b = 4
+
+Accuracy: 56.9091 %
+Average precision: 0.569099132459
+Average recall: 0.569090909091
+
+================ Result for partition d7 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         662               60.1818 %
+Incorrectly Classified Instances       438               39.8182 %
+Kappa statistic                          0.2036
+Mean absolute error                      0.4449
+Root mean squared error                  0.5492
+Relative absolute error                 88.987  %
+Root relative squared error            109.8439 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 323 227 |   a = 0
+ 211 339 |   b = 4
+
+Accuracy: 60.1818 %
+Average precision: 0.601904421593
+Average recall: 0.601818181818
+
+================ Result for partition d8 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         636               57.8182 %
+Incorrectly Classified Instances       464               42.1818 %
+Kappa statistic                          0.1564
+Mean absolute error                      0.4611
+Root mean squared error                  0.5655
+Relative absolute error                 92.2155 %
+Root relative squared error            113.1021 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 324 226 |   a = 0
+ 238 312 |   b = 4
+
+Accuracy: 57.8182 %
+Average precision: 0.578219053037
+Average recall: 0.578181818182
+
+================ Result for partition d9 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         664               60.3636 %
+Incorrectly Classified Instances       436               39.6364 %
+Kappa statistic                          0.2073
+Mean absolute error                      0.4375
+Root mean squared error                  0.5444
+Relative absolute error                 87.4955 %
+Root relative squared error            108.8792 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 313 237 |   a = 0
+ 199 351 |   b = 4
+
+Accuracy: 60.3636 %
+Average precision: 0.604133450255
+Average recall: 0.603636363636
+
+================ Result for partition d10 as test set ================
+=== Error on test data ===
+
+Correctly Classified Instances         650               59.0909 %
+Incorrectly Classified Instances       450               40.9091 %
+Kappa statistic                          0.1818
+Mean absolute error                      0.4478
+Root mean squared error                  0.5566
+Relative absolute error                 89.5654 %
+Root relative squared error            111.3142 %
+Total Number of Instances             1100     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 329 221 |   a = 0
+ 229 321 |   b = 4
+
+Accuracy: 59.0909 %
+Average precision: 0.590928328638
+Average recall: 0.590909090909
+
+
+
+
+===================================== P-values =====================================
+
+weka.classifiers.trees.J48 and weka.classifiers.bayes.NaiveBayes
+Ttest_relResult(statistic=-4.3526528459637692, pvalue=0.0018431071758207645)
+
+weka.classifiers.bayes.NaiveBayes and weka.classifiers.functions.SMO
+Ttest_relResult(statistic=-6.312945273187494, pvalue=0.00013883425371502304)
+
+weka.classifiers.functions.SMO and weka.classifiers.trees.J48
+Ttest_relResult(statistic=11.287510683614288, pvalue=1.2946768451721656e-06)
+
+The p-value for SVM and decision tree is huge whihc means that we cannot reject the nul hypothesis. Therefore, they are significantly different from each other.

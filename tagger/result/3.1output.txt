@@ -1,0 +1,1986 @@
+
+J48 pruned tree
+------------------
+
+FirstPersonPronouns <= 0
+|   SecondPersonPronouns <= 0
+|   |   AvgLengthOfTokens <= 5.294118
+|   |   |   ProperNouns <= 2
+|   |   |   |   CommonNouns <= 1
+|   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   CommonNouns <= 0: 0 (41.0/15.0)
+|   |   |   |   |   |   CommonNouns > 0
+|   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (118.0/47.0)
+|   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 2.75: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 2.75: 4 (12.0/4.0)
+|   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.466667
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.866667
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.45: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.45: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.866667: 0 (4.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.466667: 4 (4.0)
+|   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 2.5: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 2.5: 0 (20.0/5.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.5: 0 (8.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.5: 4 (3.0/1.0)
+|   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   wh-words <= 0: 0 (219.0/66.0)
+|   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.444444: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.444444: 4 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (3.0)
+|   |   |   |   |   |   Dashes > 0
+|   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (4.0/1.0)
+|   |   |   |   |   |   |   Past-tenseVerbs > 0: 0 (2.0)
+|   |   |   |   CommonNouns > 1
+|   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   Dashes <= 0: 4 (448.0/174.0)
+|   |   |   |   |   |   |   |   |   |   |   Dashes > 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.25: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.25: 4 (27.0/2.0)
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.65
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.65: 4 (59.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (83.0/19.0)
+|   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 4 (44.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.5: 0 (43.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.5: 4 (20.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 16: 4 (29.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 16: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 0 (46.0/15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.090909: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.090909: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 6.75: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 6.75: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 2: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.75: 4 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 4 (46.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.933333: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.933333: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.380952: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.380952: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 4 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 0 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.75: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.75: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.1: 4 (45.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 1: 4 (32.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 11.666667: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 11.666667: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 14: 4 (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 14: 0 (6.0/1.0)
+|   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   wh-words <= 1
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.391304
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.526316: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.526316: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.391304: 0 (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.5: 4 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.5: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.565217: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.565217: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 1: 0 (4.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.4: 4 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.4: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 4 (6.0/1.0)
+|   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   CommonNouns <= 2
+|   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (21.0/3.0)
+|   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   CommonNouns > 2
+|   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.631579
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.25: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.25: 4 (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.631579: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3: 0 (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Dashes > 0: 0 (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Dashes <= 0: 4 (41.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Dashes > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (7.0/1.0)
+|   |   |   |   |   |   |   Future-tenseVerbs > 0: 0 (9.0/2.0)
+|   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   AvgLengthOfTokens <= 3.9375
+|   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 1
+|   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (19.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 4.5: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 4.5: 0 (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.36
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.36: 0 (13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.75: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.75: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6: 0 (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.222222: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.222222: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 3: 0 (26.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 3: 4 (2.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 1
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.785714: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.785714: 0 (3.0)
+|   |   |   |   |   |   |   |   Dashes > 0: 0 (9.0/1.0)
+|   |   |   |   |   |   |   AvgLengthOfTokens > 3.9375
+|   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 4.5: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 4.5: 0 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.136364: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.136364: 4 (25.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.818182: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.818182: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1: 4 (44.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 12: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 12: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 4 (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.48
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.48: 4 (14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0: 4 (11.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 2
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1: 0 (51.0/20.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.3: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 4 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1
+|   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 4.75: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 4.75: 0 (45.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (14.0/5.0)
+|   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0: 4 (18.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.588235: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.588235: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 0 (12.0)
+|   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.333333: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.333333: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8: 0 (29.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8: 4 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Dashes > 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.173913: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.173913: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (7.0/2.0)
+|   |   |   |   |   |   ThirdPersonPronouns > 1
+|   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 0 (40.0/10.0)
+|   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 0 (6.0)
+|   |   |   |   |   |   |   |   |   Commas > 0: 4 (3.0)
+|   |   |   |   |   |   |   Dashes > 0
+|   |   |   |   |   |   |   |   Past-tenseVerbs <= 2: 4 (4.0)
+|   |   |   |   |   |   |   |   Past-tenseVerbs > 2: 0 (4.0/1.0)
+|   |   |   ProperNouns > 2
+|   |   |   |   Adverbs <= 1
+|   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   AvgLengthOfTokens <= 3.962963
+|   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (4.0)
+|   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (3.0)
+|   |   |   |   |   |   |   Future-tenseVerbs > 0: 0 (2.0)
+|   |   |   |   |   |   AvgLengthOfTokens > 3.962963: 4 (37.0/1.0)
+|   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   Parentheses <= 0
+|   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   WordsAllInUpperCase <= 1
+|   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 0 (4.0)
+|   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   WordsAllInUpperCase > 1: 0 (5.0/1.0)
+|   |   |   |   |   |   |   Dashes > 0: 4 (5.0)
+|   |   |   |   |   |   Parentheses > 0: 4 (2.0)
+|   |   |   |   Adverbs > 1
+|   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   ProperNouns <= 3: 4 (4.0)
+|   |   |   |   |   |   |   ProperNouns > 3: 0 (2.0)
+|   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (3.0)
+|   |   |   |   |   Ellipses > 0: 0 (4.0)
+|   |   AvgLengthOfTokens > 5.294118
+|   |   |   Ellipses <= 0
+|   |   |   |   Adverbs <= 1
+|   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   AvgLengthOfSentences <= 1.666667
+|   |   |   |   |   |   |   AvgLengthOfSentences <= 1
+|   |   |   |   |   |   |   |   AvgLengthOfTokens <= 12: 4 (17.0/6.0)
+|   |   |   |   |   |   |   |   AvgLengthOfTokens > 12: 0 (9.0/2.0)
+|   |   |   |   |   |   |   AvgLengthOfSentences > 1: 0 (3.0)
+|   |   |   |   |   |   AvgLengthOfSentences > 1.666667: 4 (645.0/166.0)
+|   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   CommonNouns <= 0: 0 (8.0/2.0)
+|   |   |   |   |   |   |   |   |   CommonNouns > 0
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 7.8: 4 (63.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 7.8: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   Commas <= 0: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Commas > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   Past-tenseVerbs > 1
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 5.473684: 4 (3.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 5.473684: 0 (8.0/2.0)
+|   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   CommonNouns <= 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   CommonNouns > 1: 0 (10.0/3.0)
+|   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (6.0/1.0)
+|   |   |   |   Adverbs > 1
+|   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0: 0 (23.0/5.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7: 4 (3.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7: 0 (2.0)
+|   |   |   |   |   |   |   |   Dashes > 0: 4 (2.0)
+|   |   |   |   |   |   ProperNouns > 1: 4 (3.0)
+|   |   |   |   |   Adverbs > 2: 4 (10.0/1.0)
+|   |   |   Ellipses > 0
+|   |   |   |   wh-words <= 0
+|   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   AvgLengthOfTokens <= 6.222222
+|   |   |   |   |   |   |   AvgLengthOfTokens <= 5.777778
+|   |   |   |   |   |   |   |   AvgLengthOfTokens <= 5.363636: 0 (4.0)
+|   |   |   |   |   |   |   |   AvgLengthOfTokens > 5.363636: 4 (20.0/6.0)
+|   |   |   |   |   |   |   AvgLengthOfTokens > 5.777778: 0 (12.0/1.0)
+|   |   |   |   |   |   AvgLengthOfTokens > 6.222222: 4 (21.0/5.0)
+|   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   CommonNouns <= 4: 4 (7.0)
+|   |   |   |   |   |   CommonNouns > 4: 0 (3.0/1.0)
+|   |   |   |   wh-words > 0: 0 (3.0)
+|   SecondPersonPronouns > 0
+|   |   Future-tenseVerbs <= 0
+|   |   |   ThirdPersonPronouns <= 1: 4 (785.0/195.0)
+|   |   |   ThirdPersonPronouns > 1
+|   |   |   |   ThirdPersonPronouns <= 2
+|   |   |   |   |   ModernSlangAcroynms <= 0: 4 (22.0/1.0)
+|   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   ProperNouns <= 0: 0 (10.0/1.0)
+|   |   |   |   |   |   ProperNouns > 0: 4 (4.0)
+|   |   |   |   ThirdPersonPronouns > 2: 0 (7.0/1.0)
+|   |   Future-tenseVerbs > 0: 4 (55.0/10.0)
+FirstPersonPronouns > 0
+|   FirstPersonPronouns <= 2
+|   |   SecondPersonPronouns <= 0
+|   |   |   ProperNouns <= 2
+|   |   |   |   Parentheses <= 0
+|   |   |   |   |   AvgLengthOfTokens <= 3.923077
+|   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 1
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (391.0/90.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 11: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 11: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 12.5: 0 (15.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 12.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3: 0 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 0 (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.56: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.56: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 0 (10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (104.0/18.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 4.5: 0 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 4.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 0 (16.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.740741: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.740741
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.814815: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.814815: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.653846: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.653846: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (99.0/29.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.285714: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.285714: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.5: 4 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.6: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.6: 0 (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (101.0/23.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 0 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.538462: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.538462: 4 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.75: 0 (23.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.740741: 4 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.740741: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 8: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 2: 0 (22.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 0 (54.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 7: 0 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 7: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 1
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 2
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 4: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 4
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   ColonsAndSemi-colons > 0
+|   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 0 (18.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 2: 0 (2.0)
+|   |   |   |   |   |   |   Dashes > 0
+|   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   Dashes <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.5: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.5: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.5: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 7: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 4 (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Dashes > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 4 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   wh-words > 0: 0 (13.0/2.0)
+|   |   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   CommonNouns <= 6: 4 (4.0)
+|   |   |   |   |   |   |   |   |   CommonNouns > 6: 0 (3.0/1.0)
+|   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 0 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1: 0 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.653846: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.653846: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.8: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.583333: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.583333: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 2: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 4 (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 4 (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1: 4 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1: 4 (20.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   Commas > 1
+|   |   |   |   |   |   |   |   |   |   Commas <= 3
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 9: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 9: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   Commas > 3: 0 (2.0)
+|   |   |   |   |   |   |   |   Adverbs > 2
+|   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0: 0 (23.0/5.0)
+|   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   CommonNouns <= 12: 0 (69.0/15.0)
+|   |   |   |   |   |   |   |   |   CommonNouns > 12: 4 (4.0)
+|   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1: 0 (47.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.517241: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.517241: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (3.0)
+|   |   |   |   |   AvgLengthOfTokens > 3.923077
+|   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   Ellipses <= 1
+|   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   CommonNouns <= 2
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0: 0 (307.0/98.0)
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 5.466667: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 5.466667: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 5.411765: 4 (26.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 5.411765: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 5.1: 4 (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 5.1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.75: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 0 (39.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1: 4 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.2: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.2: 4 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 4 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   CommonNouns > 2
+|   |   |   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 0 (99.0/43.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.583333: 4 (23.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.583333: 0 (29.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 4.75: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 4.75: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 12.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 10
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.25: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.25: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 10: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.833333: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.833333: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 12.5: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (24.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.421053
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.421053: 4 (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 8: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.166667: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.166667: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 5.352941
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 4 (54.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 0 (11.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 4 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.181818: 0 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.181818
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.526316: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.526316: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 5.352941: 0 (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (30.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 0 (34.0/13.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (31.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.266667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 6.5: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 6.5: 4 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.266667: 0 (23.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 6.25: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 6.25: 0 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.636364
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7: 0 (28.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.636364: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (28.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.15: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.15: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 14
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.166667: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.166667: 4 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 14: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 8: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (40.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.076923: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.076923: 4 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 4 (37.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3: 0 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 10: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 10: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (19.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 1: 4 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.214286: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.214286: 0 (12.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.48
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 0 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.48: 4 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 0 (16.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.166667: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.166667: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.533333: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.533333: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 0 (38.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 11.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.125: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.125: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 11.5: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 8: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 8: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (21.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.1: 4 (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.294118: 0 (11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.294118
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 4: 4 (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 4: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Commas > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2: 0 (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 2: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   Dashes > 0
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 9.666667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.25: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.25: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 9.666667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 1: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (15.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 0 (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (7.0)
+|   |   |   |   |   |   |   |   Past-tenseVerbs > 1
+|   |   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 0 (72.0/16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 14.5: 0 (16.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 14.5: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.619048
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 0 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 4 (18.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.619048: 0 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 2: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 3: 0 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (29.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3: 0 (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0: 0 (17.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 7: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1: 0 (45.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   Dashes > 0
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Dashes <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Dashes > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (8.0)
+|   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (3.0/1.0)
+|   |   |   |   |   |   |   Ellipses > 1
+|   |   |   |   |   |   |   |   WordsAllInUpperCase <= 3
+|   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   CommonNouns <= 6: 0 (26.0/2.0)
+|   |   |   |   |   |   |   |   |   |   CommonNouns > 6
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.666667: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.666667: 4 (3.0)
+|   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4: 0 (12.0/2.0)
+|   |   |   |   |   |   |   |   WordsAllInUpperCase > 3: 4 (6.0/1.0)
+|   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.307692
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (19.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (13.0/2.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.307692
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (29.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3: 4 (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (11.0)
+|   |   |   |   |   |   |   |   |   Adverbs > 2
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4: 0 (8.0)
+|   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5: 4 (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.269231: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.269231: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 0: 4 (5.0)
+|   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (6.0)
+|   |   |   |   |   |   |   Commas > 1
+|   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 0 (8.0/1.0)
+|   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (3.0/1.0)
+|   |   |   |   Parentheses > 0
+|   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   Past-tenseVerbs <= 2
+|   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.578947: 0 (4.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.578947
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0: 4 (11.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 4 (4.0)
+|   |   |   |   |   |   |   Past-tenseVerbs > 2: 0 (5.0/1.0)
+|   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   AvgLengthOfTokens <= 4.882353
+|   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   Parentheses <= 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Parentheses > 1: 0 (18.0/4.0)
+|   |   |   |   |   |   |   |   |   NumOfSentences > 3: 4 (4.0)
+|   |   |   |   |   |   |   |   ProperNouns > 0: 0 (7.0/1.0)
+|   |   |   |   |   |   |   AvgLengthOfTokens > 4.882353: 4 (4.0)
+|   |   |   |   |   Dashes > 0: 4 (20.0/4.0)
+|   |   |   ProperNouns > 2
+|   |   |   |   Parentheses <= 0
+|   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   ProperNouns <= 3
+|   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 22
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 3: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 3: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 22: 0 (2.0)
+|   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.962963: 0 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.962963
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.5: 4 (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.5: 0 (5.0)
+|   |   |   |   |   |   |   ProperNouns > 3
+|   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (14.0)
+|   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 12.666667: 4 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 12.666667: 0 (5.0/1.0)
+|   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   NumOfSentences <= 1: 4 (2.0)
+|   |   |   |   |   |   |   NumOfSentences > 1: 0 (7.0/1.0)
+|   |   |   |   |   ColonsAndSemi-colons > 0: 4 (11.0/2.0)
+|   |   |   |   Parentheses > 0: 4 (10.0/1.0)
+|   |   SecondPersonPronouns > 0
+|   |   |   Commas <= 0
+|   |   |   |   Dashes <= 0
+|   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   SecondPersonPronouns <= 1
+|   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 15.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.5: 0 (44.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.863636: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.863636: 4 (24.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 15.5: 4 (11.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 1: 0 (44.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0: 0 (16.0/2.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.962963: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.962963: 0 (2.0)
+|   |   |   |   |   |   |   ColonsAndSemi-colons > 0
+|   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.333333: 0 (4.0)
+|   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.333333: 4 (9.0)
+|   |   |   |   |   |   SecondPersonPronouns > 1
+|   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   CommonNouns <= 5
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 12
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 9.5: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 9.5: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 12: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   CommonNouns > 5: 4 (13.0/1.0)
+|   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (3.0)
+|   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 0 (5.0)
+|   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (3.0/1.0)
+|   |   |   |   |   NumOfSentences > 1
+|   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 4 (39.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (24.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (29.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (15.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 4 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 2: 4 (36.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 1: 4 (35.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1
+|   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.235294
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 2: 4 (18.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.235294: 0 (12.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.75: 4 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.75: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 4: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 1: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 1: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 0 (12.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 10: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 10: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.588235: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.588235: 4 (7.0)
+|   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   Adverbs <= 3: 4 (37.0/9.0)
+|   |   |   |   |   |   |   |   Adverbs > 3: 0 (2.0)
+|   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1: 0 (14.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 4 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 0 (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 0 (11.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wh-words > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 3
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 0 (2.0)
+|   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.2
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 1: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 9.333333: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 9.333333: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.2: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 4 (4.0)
+|   |   |   |   |   |   |   |   ThirdPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   Adverbs <= 3: 0 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Adverbs > 3: 4 (2.0)
+|   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (16.0/3.0)
+|   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.692308: 0 (7.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.692308
+|   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.807692: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.807692: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (14.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   Adverbs > 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (22.0/5.0)
+|   |   |   |   Dashes > 0
+|   |   |   |   |   Past-tenseVerbs <= 2: 4 (57.0/14.0)
+|   |   |   |   |   Past-tenseVerbs > 2: 0 (4.0)
+|   |   |   Commas > 0
+|   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 1
+|   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 3: 4 (59.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 3: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   wh-words <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.32
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.32: 4 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   wh-words > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 1: 4 (7.0/1.0)
+|   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   wh-words <= 1
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.333333: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.333333
+|   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1: 4 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 13: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 13: 0 (3.0)
+|   |   |   |   |   |   |   |   |   wh-words > 1: 0 (2.0)
+|   |   |   |   |   |   |   ColonsAndSemi-colons > 0
+|   |   |   |   |   |   |   |   ProperNouns <= 0: 0 (3.0)
+|   |   |   |   |   |   |   |   ProperNouns > 0: 4 (3.0)
+|   |   |   |   |   |   Commas > 1
+|   |   |   |   |   |   |   AvgLengthOfSentences <= 7: 0 (2.0)
+|   |   |   |   |   |   |   AvgLengthOfSentences > 7: 4 (37.0/4.0)
+|   |   |   |   |   ProperNouns > 1: 4 (15.0/1.0)
+|   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   CommonNouns <= 1: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   CommonNouns > 1: 4 (46.0/5.0)
+|   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8.333333: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8.333333: 4 (6.0)
+|   |   |   |   |   |   |   |   |   SecondPersonPronouns > 1: 0 (6.0)
+|   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   wh-words <= 1
+|   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 9.666667: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 9.666667: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 2: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1: 4 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   ProperNouns > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   wh-words > 1: 0 (3.0)
+|   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   WordsAllInUpperCase <= 1
+|   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   |   |   |   |   Dashes <= 0
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.380952: 0 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.380952: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Future-tenseVerbs > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Dashes > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   Commas > 1
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1: 4 (9.0)
+|   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1: 0 (3.0/1.0)
+|   |   |   |   |   |   |   |   Ellipses > 0: 0 (5.0/1.0)
+|   |   |   |   |   |   |   WordsAllInUpperCase > 1: 0 (4.0)
+|   |   |   |   |   ColonsAndSemi-colons > 0: 4 (11.0/1.0)
+|   FirstPersonPronouns > 2
+|   |   SecondPersonPronouns <= 3
+|   |   |   Dashes <= 0
+|   |   |   |   Parentheses <= 0
+|   |   |   |   |   Commas <= 1
+|   |   |   |   |   |   WordsAllInUpperCase <= 2
+|   |   |   |   |   |   |   Future-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   CommonNouns <= 9
+|   |   |   |   |   |   |   |   |   Adverbs <= 2
+|   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 0 (178.0/22.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.866667: 0 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.866667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.083333: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.083333: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 0 (17.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.75: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 10: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 10: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0: 0 (22.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 2: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (15.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 3: 0 (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 7
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 1: 4 (16.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 7: 0 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.210526: 0 (28.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.210526: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 10.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.28125: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.28125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.75: 0 (46.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 1: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 6: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 6: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 0: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 8: 4 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 8: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 7.5: 0 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 7.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 4 (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 1: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 10.5: 0 (11.0)
+|   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 4
+|   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 0: 0 (23.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 0: 0 (3.0)
+|   |   |   |   |   |   |   |   |   Adverbs > 2: 0 (106.0/14.0)
+|   |   |   |   |   |   |   |   CommonNouns > 9
+|   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.76: 0 (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.76: 4 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 0 (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 13: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   ThirdPersonPronouns > 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   FirstPersonPronouns > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 4.2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 1: 0 (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 1: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 4.2: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 13.5: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 13.5: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 0
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 0 (9.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 11: 0 (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   NumOfSentences > 2: 4 (2.0)
+|   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (5.0)
+|   |   |   |   |   |   |   Future-tenseVerbs > 0
+|   |   |   |   |   |   |   |   CommonNouns <= 10
+|   |   |   |   |   |   |   |   |   Adverbs <= 1
+|   |   |   |   |   |   |   |   |   |   wh-words <= 1
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns <= 0: 0 (14.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   SecondPersonPronouns > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ColonsAndSemi-colons > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 0: 4 (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 8: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 8: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wh-words > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   Ellipses > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   ProperNouns > 1: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 0 (3.0)
+|   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 1: 4 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 1: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 1: 4 (3.0)
+|   |   |   |   |   |   |   |   |   Adverbs > 1
+|   |   |   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.655172: 0 (10.0)
+|   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.655172
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs <= 0: 0 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Past-tenseVerbs > 0: 4 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wh-words > 0: 0 (8.0)
+|   |   |   |   |   |   |   |   CommonNouns > 10: 0 (7.0)
+|   |   |   |   |   |   WordsAllInUpperCase > 2
+|   |   |   |   |   |   |   FirstPersonPronouns <= 4
+|   |   |   |   |   |   |   |   AvgLengthOfSentences <= 5.666667: 4 (3.0)
+|   |   |   |   |   |   |   |   AvgLengthOfSentences > 5.666667: 0 (17.0/3.0)
+|   |   |   |   |   |   |   FirstPersonPronouns > 4: 4 (7.0)
+|   |   |   |   |   Commas > 1
+|   |   |   |   |   |   FirstPersonPronouns <= 3
+|   |   |   |   |   |   |   Past-tenseVerbs <= 0
+|   |   |   |   |   |   |   |   Commas <= 2: 4 (18.0/2.0)
+|   |   |   |   |   |   |   |   Commas > 2
+|   |   |   |   |   |   |   |   |   Adverbs <= 0: 4 (3.0)
+|   |   |   |   |   |   |   |   |   Adverbs > 0: 0 (7.0/1.0)
+|   |   |   |   |   |   |   Past-tenseVerbs > 0
+|   |   |   |   |   |   |   |   wh-words <= 0
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 4
+|   |   |   |   |   |   |   |   |   |   Ellipses <= 0
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commas <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens <= 3.962963: 4 (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   AvgLengthOfTokens > 3.962963: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 0: 4 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   CommonNouns > 4: 0 (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   Commas > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs <= 2: 4 (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   Adverbs > 2: 0 (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   CoordinatingConjunctions > 1: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   ModernSlangAcroynms > 0: 4 (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Ellipses > 0: 4 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   WordsAllInUpperCase > 4: 0 (2.0)
+|   |   |   |   |   |   |   |   wh-words > 0: 0 (7.0/1.0)
+|   |   |   |   |   |   FirstPersonPronouns > 3
+|   |   |   |   |   |   |   Adverbs <= 3
+|   |   |   |   |   |   |   |   SecondPersonPronouns <= 1: 0 (30.0/4.0)
+|   |   |   |   |   |   |   |   SecondPersonPronouns > 1
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences <= 14.5: 0 (2.0)
+|   |   |   |   |   |   |   |   |   AvgLengthOfSentences > 14.5: 4 (3.0)
+|   |   |   |   |   |   |   Adverbs > 3: 4 (5.0/1.0)
+|   |   |   |   Parentheses > 0
+|   |   |   |   |   CommonNouns <= 8: 4 (20.0/6.0)
+|   |   |   |   |   CommonNouns > 8: 0 (5.0)
+|   |   |   Dashes > 0
+|   |   |   |   Parentheses <= 0
+|   |   |   |   |   Dashes <= 1
+|   |   |   |   |   |   ProperNouns <= 1
+|   |   |   |   |   |   |   Commas <= 0: 4 (29.0/10.0)
+|   |   |   |   |   |   |   Commas > 0
+|   |   |   |   |   |   |   |   NumOfSentences <= 1: 4 (6.0/2.0)
+|   |   |   |   |   |   |   |   NumOfSentences > 1: 0 (10.0/2.0)
+|   |   |   |   |   |   ProperNouns > 1: 4 (4.0)
+|   |   |   |   |   Dashes > 1
+|   |   |   |   |   |   ModernSlangAcroynms <= 1
+|   |   |   |   |   |   |   CoordinatingConjunctions <= 0: 0 (8.0)
+|   |   |   |   |   |   |   CoordinatingConjunctions > 0
+|   |   |   |   |   |   |   |   CommonNouns <= 6: 4 (2.0)
+|   |   |   |   |   |   |   |   CommonNouns > 6: 0 (3.0)
+|   |   |   |   |   |   ModernSlangAcroynms > 1: 4 (2.0)
+|   |   |   |   Parentheses > 0: 0 (4.0)
+|   |   SecondPersonPronouns > 3
+|   |   |   Future-tenseVerbs <= 0: 0 (35.0)
+|   |   |   Future-tenseVerbs > 0: 4 (2.0)
+
+Number of Leaves  :     969
+
+Size of the tree :  1937
+
+
+Time taken to build model: 1.57 seconds
+Time taken to test model on training data: 0.13 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances        8795               79.9545 %
+Incorrectly Classified Instances      2205               20.0455 %
+Kappa statistic                          0.5991
+Mean absolute error                      0.2903
+Root mean squared error                  0.381 
+Relative absolute error                 58.0633 %
+Root relative squared error             76.1993 %
+Total Number of Instances            11000     
+
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4252 1248 |    a = 0
+  957 4543 |    b = 4
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         191               53.2033 %
+Incorrectly Classified Instances       168               46.7967 %
+Kappa statistic                          0.0621
+Mean absolute error                      0.4862
+Root mean squared error                  0.5966
+Relative absolute error                 97.2369 %
+Root relative squared error            119.3106 %
+Total Number of Instances              359     
+
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  81  96 |   a = 0
+  72 110 |   b = 4
+
